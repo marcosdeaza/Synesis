@@ -197,7 +197,7 @@ Entrada: `data/pilot/rights_cleared.jsonl`. Salidas: `reports/`, reconstruidas l
 
 Una mención de IA no acredita uso. Un año de repositorio no prueba defensa. CC0 se refiere a los **metadatos seleccionados**: no autoriza a redistribuir las tesis o PDF ni implica permiso de entrenamiento sobre esas obras.
 
-No se ha creado un repositorio remoto ni elegido visibilidad. La última comprobación de autenticación de GitHub encontró una credencial inválida; la publicación remota sigue pendiente.
+Este exportador prepara archivos locales y no publica automáticamente. El repositorio de referencia es [marcosdeaza/Synesis](https://github.com/marcosdeaza/Synesis); cada nueva distribución conserva su propia revisión de alcance y sus manifiestos.
 '''
 
 
@@ -226,7 +226,7 @@ La memoria operativa completa del origen se denomina `CONTEXTO.md`; deliberadame
 4. Cambiar gráficos y denominadores según el corpus efectivamente distribuido. No reutilizar figuras del inventario local como si fueran resultados públicos.
 5. Registrar cada decisión nueva en este archivo y mantener protocolo, diccionario, permisos y pruebas consistentes.
 
-Pendientes: cerrar permisos del núcleo valenciano, auditar fechas académicas, balancear cohortes/disciplinas, anotar evidencia humana y prerregistrar antes de análisis confirmatorio. No se han entrenado modelos con estos trabajos. GitHub sigue pendiente de autenticación válida y elección de visibilidad; este exportador no realiza publicación remota.
+Pendientes: cerrar permisos del núcleo valenciano, auditar fechas académicas, balancear cohortes/disciplinas, anotar evidencia humana y prerregistrar antes de análisis confirmatorio. No se han entrenado modelos con estos trabajos. El repositorio de referencia es https://github.com/marcosdeaza/Synesis, público por decisión del investigador. Este exportador no realiza publicación remota de una nueva variante.
 '''
 
 
