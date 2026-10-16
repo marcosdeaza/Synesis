@@ -1,0 +1,108 @@
+[
+  {
+    "id": "mit",
+    "name": "Massachusetts Institute of Technology",
+    "country": "Estados Unidos",
+    "city": "Cambridge, Massachusetts",
+    "region": "USA",
+    "priority": "international_comparator",
+    "repository_url": "https://dspace.mit.edu/",
+    "oai_base": "https://dspace.mit.edu/server/oai/request",
+    "access_status": "verified_oai_and_public_api; pilot=10",
+    "degree_scope": [
+      "bachelor",
+      "master"
+    ],
+    "coverage_note": "MIT Theses es una colección seleccionada, no completa. La biblioteca declara incorporación sistemática de máster/doctorado desde 2004, escaneada hasta 2020 y electrónica desde 2020. Los grados bachelor tienen cobertura distinta. Piloto intencional: cinco máster de 2019, cuatro máster y un bachelor de 2024.",
+    "license_note": "La política Open Metadata aplica CC0 a metadatos creados por MIT Libraries; los campos creados por autores pueden conservar otros derechos. No se aplica CC0 indiscriminadamente a cada registro ni a las tesis. Resúmenes omitidos; license conserva solo URI Creative Commons explícitas; declaraciones de derechos y referencias de colección se conservan separadas.",
+    "metadata_license": "CC0-1.0 only for MIT Libraries-created metadata; author-created fields may differ",
+    "metadata_license_evidence_url": "https://libraries.mit.edu/about/policies/open-metadata-policy/",
+    "evidence_urls": [
+      "https://dspace.mit.edu/communities/6fc02cc2-0d14-4023-8a6f-d9900d0c4302",
+      "https://dspace.mit.edu/server/oai/request?verb=Identify",
+      "https://dspace.mit.edu/server/oai/request?verb=ListMetadataFormats",
+      "https://dspace.mit.edu/server/api/discover/search/objects?query=dc.date.issued%3A2024%20AND%20dc.type%3AThesis&size=15",
+      "https://libraries.mit.edu/about/policies/open-metadata-policy/"
+    ],
+    "checked_at": "2026-10-16T06:42:30Z"
+  },
+  {
+    "id": "tu_berlin",
+    "name": "Technische Universität Berlin",
+    "country": "Alemania",
+    "city": "Berlín",
+    "region": "Europa",
+    "priority": "international_comparator",
+    "repository_url": "https://depositonce.tu-berlin.de/",
+    "oai_base": "https://api-depositonce.tu-berlin.de/server/oai/request",
+    "access_status": "verified_oai_and_public_api; pilot=10",
+    "degree_scope": [
+      "bachelor",
+      "master"
+    ],
+    "coverage_note": "DepositOnce admite bachelor/master de estudiantes con nota very good y aval de supervisor o evaluador: selección fuerte, no censo de titulados. Piloto cinco Bachelor Thesis y cinco Master Thesis (2018–2026 en consulta de máster; resultados observados 2021–2026). El tipo Master Thesis exige revisar equivalencias históricas; el piloto excluye resultados históricos anteriores a 2018.",
+    "license_note": "La ayuda oficial publica metadatos bajo CC0. Los derechos de tesis difieren por ítem y se conservan separados en license. La ayuda anuncia reducción del acceso por aplicaciones IA al contenido y, por separado, permite metadatos mediante OAI. Piloto acotado: metadatos públicos, sin PDF, sin eludir bloqueos.",
+    "metadata_license": "CC0-1.0",
+    "metadata_license_evidence_url": "https://depositonce.tu-berlin.de/info/help",
+    "evidence_urls": [
+      "https://depositonce.tu-berlin.de/collections/da16560b-bd8b-4c34-a200-b139f21d9416/browse/dateissued",
+      "https://depositonce.tu-berlin.de/info/help",
+      "https://api-depositonce.tu-berlin.de/server/oai/request?verb=Identify",
+      "https://api-depositonce.tu-berlin.de/server/oai/request?verb=ListSets",
+      "https://api-depositonce.tu-berlin.de/server/api/discover/search/objects?query=dc.type%3A%22Master%20Thesis%22&size=5"
+    ],
+    "checked_at": "2026-10-16T06:42:30Z"
+  },
+  {
+    "id": "hkust",
+    "name": "The Hong Kong University of Science and Technology",
+    "country": "China (Hong Kong SAR)",
+    "city": "Hong Kong",
+    "region": "Asia",
+    "priority": "international_comparator",
+    "repository_url": "https://repository.hkust.edu.hk/",
+    "oai_base": null,
+    "access_status": "official_department_list_verified; research_portal_403; repository_oai_redirect_loop; pilot=10",
+    "degree_scope": [
+      "master"
+    ],
+    "coverage_note": "Comparador de Asia ubicado en Hong Kong, Región Administrativa Especial de China; no representa China continental. Se verifica el listado oficial Master Theses de la Division of Social Science (1994–2025). Piloto cinco títulos en 2019 y cinco en 2025, exclusivamente de esa división. Portal institucional de investigación devuelve 403; prueba de ruta OAI da bucle de redirección, por ello oai_base permanece null.",
+    "license_note": "No se localizó licencia abierta específica de los metadatos del listado. Se conservan títulos/años y enlaces; sin abstracts ni PDF. El acuerdo de depósito de tesis conserva copyright del autor; acceso público no equivale a licencia abierta de reutilización.",
+    "metadata_license": null,
+    "metadata_license_evidence_url": null,
+    "evidence_urls": [
+      "https://sosc.hkust.edu.hk/research_n_facilities/master_theses",
+      "https://libguides.hkust.edu.hk/e-thesis/find",
+      "https://library.hkust.edu.hk/research-learning-support/research-support",
+      "https://researchportal.hkust.edu.hk/en/studentTheses/",
+      "https://library.hkust.edu.hk/files/forms/thesis-agreement.pdf"
+    ],
+    "checked_at": "2026-10-16T06:42:30Z"
+  },
+  {
+    "id": "usp",
+    "name": "Universidade de São Paulo",
+    "country": "Brasil",
+    "city": "São Paulo (institución con varios campus)",
+    "region": "LATAM",
+    "priority": "international_comparator",
+    "repository_url": "https://teses.usp.br/",
+    "oai_base": "https://teses.usp.br/cgi-bin/oai.pl",
+    "access_status": "verified_oai_identify_and_sets; listrecords_timeout_or_incomplete; public_html_metadata_verified; pilot=5",
+    "degree_scope": [
+      "master"
+    ],
+    "coverage_note": "BDTD contiene dissertações de mestrado y tesis doctorales; set=dissertations se identifica oficialmente como Master's dissertations. Piloto de cinco fichas HTML de mestrado, 2019–2024 según dc.date.issued (defensa). No contiene TCC/bachelor en esta muestra. Mestrado de investigación y TFM español requieren análisis curricular antes de tratarlos como equivalentes.",
+    "license_note": "No se verificó licencia abierta general para metadatos. dc.rights=publico expresa acceso, no una licencia. Las fichas incluyen condiciones de investigación/enseñanza y atribución para el documento. Se omiten abstracts y PDF; license=null porque no hay licencia abierta normalizada verificada.",
+    "metadata_license": null,
+    "metadata_license_evidence_url": null,
+    "evidence_urls": [
+      "https://www.teses.usp.br/index.php",
+      "https://teses.usp.br/cgi-bin/oai.pl?verb=Identify",
+      "https://teses.usp.br/cgi-bin/oai.pl?verb=ListSets",
+      "https://teses.usp.br/teses/disponiveis/55/55134/tde-21082019-164932/pt-br.html",
+      "https://teses.usp.br/teses/disponiveis/48/48138/tde-05022025-113402/pt-br.html"
+    ],
+    "checked_at": "2026-10-16T06:42:30Z"
+  }
+]

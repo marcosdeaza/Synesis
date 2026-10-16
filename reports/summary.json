@@ -1,0 +1,43 @@
+{
+  "total_records": 10,
+  "eligible_records": 10,
+  "unknown_degree": 0,
+  "institutions": [
+    {
+      "institution_id": "tu_berlin",
+      "records": 10,
+      "eligible": 10,
+      "abstracts": 10,
+      "abstracts_analyzed": 0,
+      "cue_mentions": 0,
+      "min_year": 2021,
+      "max_year": 2026
+    }
+  ],
+  "cells": [
+    {
+      "institution_id": "tu_berlin",
+      "period": "post_2024",
+      "n": 6,
+      "mentions": 0
+    },
+    {
+      "institution_id": "tu_berlin",
+      "period": "pre_2022",
+      "n": 1,
+      "mentions": 0
+    },
+    {
+      "institution_id": "tu_berlin",
+      "period": "transition_2022_2023",
+      "n": 3,
+      "mentions": 0
+    }
+  ],
+  "period_counts": {
+    "pre_2022": 1,
+    "transition_2022_2023": 3,
+    "post_2024": 6
+  },
+  "claim": "Convenience pilot of metadata. No population prevalence, AI authorship or causal effects estimated."
+}

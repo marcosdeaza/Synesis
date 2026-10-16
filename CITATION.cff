@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Cite the research protocol and software version; scientific maintainer details remain to be completed."
+title: "Synesis: TFG y TFM durante la transición de la IA generativa"
+authors:
+  - name: "Synesis contributors"
+type: software
+version: 0.1.0
+date-released: 2026-10-16
+abstract: "Research protocol, source audit and reproducible metadata pilot. Initial AI-assisted draft; not a completed causal study."
+license: MIT
+keywords:
+  - university theses
+  - generative AI
+  - reproducible research
+  - TFG
+  - TFM
+repository-code: "https://github.com/marcosdeaza/Synesis"
+url: "https://github.com/marcosdeaza/Synesis"

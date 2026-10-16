@@ -1,0 +1,50 @@
+{
+  "variant": "public_metadata_cc0",
+  "created_at": "2026-10-16T07:00:35Z",
+  "local_audit_records": 225,
+  "local_audit_institutions": {
+    "hkust": 10,
+    "mit": 10,
+    "tu_berlin": 10,
+    "uev": 90,
+    "upv": 100,
+    "usp": 5
+  },
+  "source_inputs": [
+    {
+      "path": "data/pilot/global.jsonl",
+      "sha256": "0e8554febcdc0eea5a636c87baed65ebe0b07392edddcf0676c82518e66c40c3",
+      "bytes": 39812
+    },
+    {
+      "path": "data/pilot/spain.jsonl",
+      "sha256": "5bc4144042aba1ad1716bbfeadfa0e223d2bb448787da7872fb2fc7aaf9b0ce2",
+      "bytes": 254709
+    }
+  ],
+  "distributed_records": 10,
+  "distributed_institutions": {
+    "tu_berlin": 10
+  },
+  "selection": "metadata_license exactly CC0-1.0 AND nonempty HTTP(S) metadata_license_evidence_url",
+  "dataset": {
+    "path": "data/pilot/rights_cleared.jsonl",
+    "sha256": "9997ce10d04112693f63310bd871a56d204abcdab4c267c46909fb0604e8f33b"
+  },
+  "license_scope": "CC0 covers selected metadata only; no license for theses, PDFs or model training is inferred.",
+  "exclusions": [
+    "original pilot datasets",
+    "raw",
+    "harvests",
+    "caches",
+    ".git",
+    "original reports/features",
+    "original plots",
+    "original local CONTEXTO.md; public index substituted"
+  ],
+  "notebooks": "code outputs, execution counts and attachments removed",
+  "offline_build": "python -m synesis.cli --root <export> build; succeeded",
+  "remote_publication": "Public repository created; initial push and CI verification in progress",
+  "repository_url": "https://github.com/marcosdeaza/Synesis",
+  "visibility": "public"
+}

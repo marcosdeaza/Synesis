@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="926.64pt" height="430.434844pt" viewBox="0 0 926.64 430.434844" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-16T09:02:02.046279</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.9.4, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 430.434844 
+L 926.64 430.434844 
+L 926.64 0 
+L 0 0 
+z
+" style="fill: #f7f3e9"/>
+  </g>
+  <g id="axes_1">
+   <g id="line2d_1">
+    <path d="M 149.367273 66.239289 
+L 149.367273 374.274773 
+" clip-path="url(#pa370a0002a)" style="fill: none; stroke: #c9cabc; stroke-linecap: square"/>
+   </g>
+   <g id="PathCollection_1">
+    <defs>
+     <path id="maf5f4f5e37" d="M 0 3.082207 
+C 0.817411 3.082207 1.601453 2.757446 2.179449 2.179449 
+C 2.757446 1.601453 3.082207 0.817411 3.082207 0 
+C 3.082207 -0.817411 2.757446 -1.601453 2.179449 -2.179449 
+C 1.601453 -2.757446 0.817411 -3.082207 0 -3.082207 
+C -0.817411 -3.082207 -1.601453 -2.757446 -2.179449 -2.179449 
+C -2.757446 -1.601453 -3.082207 -0.817411 -3.082207 0 
+C -3.082207 0.817411 -2.757446 1.601453 -2.179449 2.179449 
+C -1.601453 2.757446 -0.817411 3.082207 0 3.082207 
+z
+" style="stroke: #af5b35"/>
+    </defs>
+    <g clip-path="url(#pa370a0002a)">
+     <use xlink:href="#maf5f4f5e37" x="149.367273" y="66.239289" style="fill: #af5b35; stroke: #af5b35"/>
+     <use xlink:href="#maf5f4f5e37" x="149.367273" y="94.242515" style="fill: #af5b35; stroke: #af5b35"/>
+     <use xlink:href="#maf5f4f5e37" x="149.367273" y="122.245741" style="fill: #af5b35; stroke: #af5b35"/>
+     <use xlink:href="#maf5f4f5e37" x="149.367273" y="150.248967" style="fill: #af5b35; stroke: #af5b35"/>
+     <use xlink:href="#maf5f4f5e37" x="149.367273" y="178.252193" style="fill: #af5b35; stroke: #af5b35"/>
+     <use xlink:href="#maf5f4f5e37" x="149.367273" y="206.255418" style="fill: #af5b35; stroke: #af5b35"/>
+     <use xlink:href="#maf5f4f5e37" x="149.367273" y="234.258644" style="fill: #af5b35; stroke: #af5b35"/>
+     <use xlink:href="#maf5f4f5e37" x="149.367273" y="262.26187" style="fill: #af5b35; stroke: #af5b35"/>
+     <use xlink:href="#maf5f4f5e37" x="149.367273" y="290.265096" style="fill: #af5b35; stroke: #af5b35"/>
+     <use xlink:href="#maf5f4f5e37" x="149.367273" y="318.268322" style="fill: #af5b35; stroke: #af5b35"/>
+     <use xlink:href="#maf5f4f5e37" x="149.367273" y="346.271547" style="fill: #af5b35; stroke: #af5b35"/>
+     <use xlink:href="#maf5f4f5e37" x="149.367273" y="374.274773" style="fill: #af5b35; stroke: #af5b35"/>
+    </g>
+   </g>
+   <g id="text_1">
+    <text style="fill: #59615d; font: 10px 'DejaVu Sans'; text-anchor: end" x="113.825455" y="68.998664" transform="rotate(-0 113.825455 68.998664)">2022-11-30</text>
+   </g>
+   <g id="text_2">
+    <text style="fill: #202523; font: 11px 'DejaVu Sans'; text-anchor: start" x="184.909091" y="69.274602" transform="rotate(-0 184.909091 69.274602)">ChatGPT research preview</text>
+   </g>
+   <g id="text_3">
+    <text style="fill: #59615d; font: 10px 'DejaVu Sans'; text-anchor: end" x="113.825455" y="97.00189" transform="rotate(-0 113.825455 97.00189)">2023-03-01</text>
+   </g>
+   <g id="text_4">
+    <text style="fill: #202523; font: 11px 'DejaVu Sans'; text-anchor: start" x="184.909091" y="97.277828" transform="rotate(-0 184.909091 97.277828)">GPT-3.5 Turbo API</text>
+   </g>
+   <g id="text_5">
+    <text style="fill: #59615d; font: 10px 'DejaVu Sans'; text-anchor: end" x="113.825455" y="125.005116" transform="rotate(-0 113.825455 125.005116)">2023-03-14</text>
+   </g>
+   <g id="text_6">
+    <text style="fill: #202523; font: 11px 'DejaVu Sans'; text-anchor: start" x="184.909091" y="125.281053" transform="rotate(-0 184.909091 125.281053)">GPT-4</text>
+   </g>
+   <g id="text_7">
+    <text style="fill: #59615d; font: 10px 'DejaVu Sans'; text-anchor: end" x="113.825455" y="153.008342" transform="rotate(-0 113.825455 153.008342)">2023-06-13</text>
+   </g>
+   <g id="text_8">
+    <text style="fill: #202523; font: 11px 'DejaVu Sans'; text-anchor: start" x="184.909091" y="153.284279" transform="rotate(-0 184.909091 153.284279)">Function calling y precios GPT-3.5 Turbo</text>
+   </g>
+   <g id="text_9">
+    <text style="fill: #59615d; font: 10px 'DejaVu Sans'; text-anchor: end" x="113.825455" y="181.011568" transform="rotate(-0 113.825455 181.011568)">2023-11-06</text>
+   </g>
+   <g id="text_10">
+    <text style="fill: #202523; font: 11px 'DejaVu Sans'; text-anchor: start" x="184.909091" y="181.287505" transform="rotate(-0 184.909091 181.287505)">GPT-4 Turbo preview y Assistants API</text>
+   </g>
+   <g id="text_11">
+    <text style="fill: #59615d; font: 10px 'DejaVu Sans'; text-anchor: end" x="113.825455" y="209.014793" transform="rotate(-0 113.825455 209.014793)">2024-01-25</text>
+   </g>
+   <g id="text_12">
+    <text style="fill: #202523; font: 11px 'DejaVu Sans'; text-anchor: start" x="184.909091" y="209.290731" transform="rotate(-0 184.909091 209.290731)">Anuncio de GPT-3.5 Turbo 0125 y nuevas tarifas</text>
+   </g>
+   <g id="text_13">
+    <text style="fill: #59615d; font: 10px 'DejaVu Sans'; text-anchor: end" x="113.825455" y="237.018019" transform="rotate(-0 113.825455 237.018019)">2024-07-18</text>
+   </g>
+   <g id="text_14">
+    <text style="fill: #202523; font: 11px 'DejaVu Sans'; text-anchor: start" x="184.909091" y="237.293957" transform="rotate(-0 184.909091 237.293957)">GPT-4o mini</text>
+   </g>
+   <g id="text_15">
+    <text style="fill: #59615d; font: 10px 'DejaVu Sans'; text-anchor: end" x="113.825455" y="265.021245" transform="rotate(-0 113.825455 265.021245)">2024-10-22</text>
+   </g>
+   <g id="text_16">
+    <text style="fill: #202523; font: 11px 'DejaVu Sans'; text-anchor: start" x="184.909091" y="265.297182" transform="rotate(-0 184.909091 265.297182)">Claude computer use beta</text>
+   </g>
+   <g id="text_17">
+    <text style="fill: #59615d; font: 10px 'DejaVu Sans'; text-anchor: end" x="113.825455" y="293.024471" transform="rotate(-0 113.825455 293.024471)">2024-11-25</text>
+   </g>
+   <g id="text_18">
+    <text style="fill: #202523; font: 11px 'DejaVu Sans'; text-anchor: start" x="184.909091" y="293.300408" transform="rotate(-0 184.909091 293.300408)">Model Context Protocol</text>
+   </g>
+   <g id="text_19">
+    <text style="fill: #59615d; font: 10px 'DejaVu Sans'; text-anchor: end" x="113.825455" y="321.027697" transform="rotate(-0 113.825455 321.027697)">2025-02-24</text>
+   </g>
+   <g id="text_20">
+    <text style="fill: #202523; font: 11px 'DejaVu Sans'; text-anchor: start" x="184.909091" y="321.303634" transform="rotate(-0 184.909091 321.303634)">Claude Code research preview</text>
+   </g>
+   <g id="text_21">
+    <text style="fill: #59615d; font: 10px 'DejaVu Sans'; text-anchor: end" x="113.825455" y="349.030922" transform="rotate(-0 113.825455 349.030922)">2025-03-11</text>
+   </g>
+   <g id="text_22">
+    <text style="fill: #202523; font: 11px 'DejaVu Sans'; text-anchor: start" x="184.909091" y="349.30686" transform="rotate(-0 184.909091 349.30686)">Responses API y Agents SDK</text>
+   </g>
+   <g id="text_23">
+    <text style="fill: #59615d; font: 10px 'DejaVu Sans'; text-anchor: end" x="113.825455" y="377.034148" transform="rotate(-0 113.825455 377.034148)">2026-09-22</text>
+   </g>
+   <g id="text_24">
+    <text style="fill: #202523; font: 11px 'DejaVu Sans'; text-anchor: start" x="184.909091" y="377.310086" transform="rotate(-0 184.909091 377.310086)">Claude Opus 5.5</text>
+   </g>
+   <g id="text_25">
+    <text style="fill: #202523; font: 19px 'DejaVu Serif'; text-anchor: start" x="7.2" y="21.637031" transform="rotate(-0 7.2 21.637031)">Hitos de disponibilidad de la IA generativa</text>
+   </g>
+  </g>
+  <g id="text_26">
+   <text style="fill: #59615d; font: 10px 'DejaVu Sans'; text-anchor: start" x="51.48" y="420.877031" transform="rotate(-0 51.48 420.877031)">Disponibilidad ≠ adopción. Fuentes primarias y contexto en config/ai_milestones.csv · Corte 16 oct 2026</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pa370a0002a">
+   <rect x="7.2" y="46.637031" width="912.24" height="347.24"/>
+  </clipPath>
+ </defs>
+</svg>

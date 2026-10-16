@@ -1,0 +1,19 @@
+{
+  "release": "0.1.0",
+  "snapshot_date": "2026-10-16",
+  "sampling": "convenience/source audit; NOT representative",
+  "inputs": [
+    {
+      "path": "data/pilot/rights_cleared.jsonl",
+      "sha256": "9997ce10d04112693f63310bd871a56d204abcdab4c267c46909fb0604e8f33b",
+      "bytes": 10852
+    }
+  ],
+  "records_in": 10,
+  "records_out": 10,
+  "issue_count": 0,
+  "code_version": "0.1.0",
+  "analysis": "title + available subjects; abstracts not redistributed",
+  "privacy": "No author/supervisor fields; source pages may identify authors.",
+  "license": "Third-party metadata: per source; no blanket license or training permission."
+}

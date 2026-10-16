@@ -1,0 +1,19 @@
+name: Reproduce the public metadata pilot
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  offline-pilot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate and rebuild without network or credentials
+        run: make reproduce
+      - name: Check generated tables are current
+        run: git diff --exit-code -- reports

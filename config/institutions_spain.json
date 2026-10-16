@@ -1,0 +1,243 @@
+[
+  {
+    "id": "uev",
+    "name": "Universidad Europea de Valencia",
+    "country": "Spain",
+    "city": "Valencia",
+    "region": "Europe",
+    "subnational_region": "Comunitat Valenciana",
+    "priority": 0,
+    "repository_url": "https://titula.universidadeuropea.es/handle/20.500.12880/20",
+    "oai_base": "https://titula.universidadeuropea.com/oai/request",
+    "access_status": "metadata_harvested",
+    "degree_scope": [
+      "bachelor",
+      "master"
+    ],
+    "coverage_note": "Obligatoria. Comunidad institucional Valencia 20 confirmada en HTML y ListSets; set com_20.500.12880_20. Primera página OAI: 90 TFG/TFM incluidos, 4 TFC y 6 tombstones excluidos. No representa toda la UEV ni acredita campus físico Valencia.",
+    "license_note": "TITULA recoge proyectos autorizados y seleccionados por calidad. Derechos específicos por registro; en el piloto aparecen licencias CC BY-NC-ND 4.0 de obras. No se ha encontrado licencia general separada para todos los metadatos. Abstracts no redistribuidos.",
+    "evidence_urls": [
+      "https://titula.universidadeuropea.es/handle/20.500.12880/20",
+      "https://titula.universidadeuropea.com/oai/request?verb=ListSets",
+      "https://titula.universidadeuropea.com/oai/request?verb=Identify",
+      "https://titula.universidadeuropea.es/page/faq?locale-attribute=es",
+      "https://titula.universidadeuropea.es/robots.txt"
+    ],
+    "checked_at": "2026-10-16",
+    "mandatory": true,
+    "pilot_records": 90,
+    "oai_set": "com_20.500.12880_20",
+    "metadata_license": null
+  },
+  {
+    "id": "upv",
+    "name": "Universitat Politècnica de València",
+    "country": "Spain",
+    "city": "Valencia",
+    "region": "Europe",
+    "subnational_region": "Comunitat Valenciana",
+    "priority": 1,
+    "repository_url": "https://riunet.upv.es/",
+    "oai_base": "https://riunet.upv.es/server/oai/request",
+    "access_status": "metadata_harvested",
+    "degree_scope": [
+      "bachelor",
+      "master"
+    ],
+    "coverage_note": "Prioridad Valencia. Set com_10251_11261 Trabajos académicos confirmado. 100 registros iniciales con tipo bachelorThesis/masterThesis. Hay sedes y escuelas distintas: campus no inferido. bachelorThesis puede incluir PFC históricos.",
+    "license_note": "RiuNet contiene trabajos abiertos, embargados y restringidos. Se preserva access_rights/rights_statement por registro; un rightsstatement InC no es una licencia abierta. No se ha confirmado una licencia general de metadatos.",
+    "evidence_urls": [
+      "https://riunet.upv.es/server/oai/request?verb=Identify",
+      "https://riunet.upv.es/server/oai/request?verb=ListSets",
+      "https://riunet.upv.es/handle/10251/11261",
+      "https://upv-es.libguides.com/recursos-tfg-tfm/riunet",
+      "https://riunet.upv.es/robots.txt"
+    ],
+    "checked_at": "2026-10-16",
+    "pilot_records": 100,
+    "oai_set": "com_10251_11261",
+    "metadata_license": null
+  },
+  {
+    "id": "uv",
+    "name": "Universitat de València",
+    "country": "Spain",
+    "city": "Valencia",
+    "region": "Europe",
+    "subnational_region": "Comunitat Valenciana",
+    "priority": 2,
+    "repository_url": "https://roderic.uv.es/",
+    "oai_base": null,
+    "access_status": "repository_verified_oai_unconfirmed",
+    "degree_scope": [
+      "bachelor",
+      "master"
+    ],
+    "coverage_note": "RODERIC y presencia de TFM confirmados mediante fuente universitaria. Sin registros en este piloto. La URL OAI candidata /rest/oai/request devolvió 404; no se presenta como funcional.",
+    "license_note": "Pie del repositorio declara metadatos bajo Public Domain y contenido CC BY-NC 4.0 salvo indicación específica. Verificar licencia por registro y protocolo antes de ampliar.",
+    "evidence_urls": [
+      "https://roderic.uv.es/items/4a2cd791-4287-437d-82ef-2d6183067643",
+      "https://www.uv.es/mastermagis/tfm/Orientaciones_TFM.pdf"
+    ],
+    "checked_at": "2026-10-16",
+    "pilot_records": 0,
+    "metadata_license_note": "Public Domain declarado en el sitio; URI de licencia no auditada."
+  },
+  {
+    "id": "uji",
+    "name": "Universitat Jaume I",
+    "country": "Spain",
+    "city": "Castellón de la Plana",
+    "region": "Europe",
+    "subnational_region": "Comunitat Valenciana",
+    "priority": 2,
+    "repository_url": "https://repositori.uji.es/",
+    "oai_base": "https://repositori.uji.es/server/oai/request",
+    "access_status": "oai_verified_no_pilot",
+    "degree_scope": [
+      "bachelor",
+      "master"
+    ],
+    "coverage_note": "Comunidad Trabajos académicos distingue colecciones TFG y TFM. Identify OAI válido, sin extracción de registros en el piloto. earliestDatestamp OAI de septiembre de 2026 no acredita inicio histórico de la producción.",
+    "license_note": "Las condiciones de acceso varían, con registros restringidos visibles. Revisar derechos y política específica de metadatos antes de redistribuir contenido.",
+    "evidence_urls": [
+      "https://repositori.uji.es/handle/10234/158176",
+      "https://repositori.uji.es/handle/10234/71324",
+      "https://repositori.uji.es/server/oai/request?verb=Identify",
+      "https://www.uji.es/serveis/cd/bib/recursos/tfg/"
+    ],
+    "checked_at": "2026-10-16",
+    "pilot_records": 0,
+    "metadata_license": null
+  },
+  {
+    "id": "upc",
+    "name": "Universitat Politècnica de Catalunya",
+    "country": "Spain",
+    "city": "Barcelona",
+    "region": "Europe",
+    "subnational_region": "Catalunya",
+    "priority": 3,
+    "repository_url": "https://upcommons.upc.edu/",
+    "oai_base": null,
+    "access_status": "repository_verified_oai_unconfirmed",
+    "degree_scope": [
+      "bachelor",
+      "master"
+    ],
+    "coverage_note": "Biblioteca distingue TFG, TFM y proyectos pre-EEES, consultables en UPCommons. Sin extracción piloto; prueba /oai/request?verb=Identify agotó tiempo de espera.",
+    "license_note": "Publicación sujeta a autorización y posibles embargos/confidencialidad. No asignar licencia uniforme al corpus.",
+    "evidence_urls": [
+      "https://bibliotecnica.upc.edu/colleccions/treballs-fi-estudis-upc",
+      "https://eseiaat.upc.edu/ca/curs-actual/treballs-fi-estudis/preguntes-frequents"
+    ],
+    "checked_at": "2026-10-16",
+    "pilot_records": 0,
+    "metadata_license": null
+  },
+  {
+    "id": "uab",
+    "name": "Universitat Autònoma de Barcelona",
+    "country": "Spain",
+    "city": "Cerdanyola del Vallès / Bellaterra",
+    "region": "Europe",
+    "subnational_region": "Catalunya",
+    "priority": 3,
+    "repository_url": "https://ddd.uab.cat/",
+    "oai_base": "https://ddd.uab.cat/oai2d",
+    "access_status": "oai_verified_no_pilot",
+    "degree_scope": [
+      "bachelor",
+      "master"
+    ],
+    "coverage_note": "TFG en colección tfg; TFM en colección de trabajos de investigación y proyectos. Verify Identify válido; sin registros piloto. Institución del entorno de Barcelona, ciudad principal del campus diferenciada.",
+    "license_note": "Identify declara uso libre de metadatos bajo CC0. El texto completo puede ser libre, embargado o restringido y tiene licencia individual por registro.",
+    "evidence_urls": [
+      "https://ddd.uab.cat/oai2d?verb=Identify",
+      "https://ddd.uab.cat/collection/tfg",
+      "https://www.uab.cat/es/aprendizaje-servicio/tfg-tfm-en-curs",
+      "https://ddd.uab.cat/pub/recdoc/2023/283767/TreballfigrauMasterDDD.pdf"
+    ],
+    "checked_at": "2026-10-16",
+    "pilot_records": 0,
+    "metadata_license": "https://creativecommons.org/publicdomain/zero/1.0/"
+  },
+  {
+    "id": "upm",
+    "name": "Universidad Politécnica de Madrid",
+    "country": "Spain",
+    "city": "Madrid",
+    "region": "Europe",
+    "subnational_region": "Comunidad de Madrid",
+    "priority": 3,
+    "repository_url": "https://oa.upm.es/",
+    "oai_base": "https://oa.upm.es/cgi/oai2",
+    "access_status": "oai_verified_no_pilot",
+    "degree_scope": [
+      "bachelor",
+      "master"
+    ],
+    "coverage_note": "Archivo Digital UPM distingue TFG/PFC y tesis de máster. Fuentes de biblioteca e Identify válidos; sin registros piloto. No equiparar PFC histórico a TFG moderno sin homologación.",
+    "license_note": "Identify autoriza cosecha de metadatos mediante OAI y prohíbe cosecha del texto completo. Esta investigación no descarga PDFs. La autorización OAI no equivale a licencia universal de los documentos.",
+    "evidence_urls": [
+      "https://oa.upm.es/cgi/oai2?verb=Identify",
+      "https://www.upm.es/biblioteca/archivo-digital-upm",
+      "https://oa.upm.es/view/type/other.default.html",
+      "https://soporte.upm.es/hc/es/articles/34237812083741-Biblioteca-Universitaria-Archivo-Digital-UPM-Publicaci%C3%B3n-Visi%C3%B3n-general"
+    ],
+    "checked_at": "2026-10-16",
+    "pilot_records": 0,
+    "metadata_license": null
+  },
+  {
+    "id": "uam",
+    "name": "Universidad Autónoma de Madrid",
+    "country": "Spain",
+    "city": "Madrid",
+    "region": "Europe",
+    "subnational_region": "Comunidad de Madrid",
+    "priority": 3,
+    "repository_url": "https://repositorio.uam.es/",
+    "oai_base": null,
+    "access_status": "repository_verified_oai_unconfirmed",
+    "degree_scope": [
+      "bachelor",
+      "master"
+    ],
+    "coverage_note": "Biblioteca confirma que Biblos-e Archivo admite TFG/TFM con cesión de derechos. Sin registros piloto. El endpoint candidato /server/oai/request respondió HTTP 403; no se intentó eludirlo.",
+    "license_note": "El depósito requiere autorización específica. No se ha auditado licencia general de metadatos.",
+    "evidence_urls": [
+      "https://www.uam.es/uam/vida-universitaria/bibliotecas/apoyo-investigacion/repositorio-institucional-deposito",
+      "https://www.uam.es/uam/investigacion/ciencia-abierta/acceso-abierto"
+    ],
+    "checked_at": "2026-10-16",
+    "pilot_records": 0,
+    "metadata_license": null
+  },
+  {
+    "id": "ucm",
+    "name": "Universidad Complutense de Madrid",
+    "country": "Spain",
+    "city": "Madrid",
+    "region": "Europe",
+    "subnational_region": "Comunidad de Madrid",
+    "priority": 3,
+    "repository_url": "https://docta.ucm.es/",
+    "oai_base": null,
+    "access_status": "repository_verified_oai_unconfirmed",
+    "degree_scope": [
+      "bachelor",
+      "master"
+    ],
+    "coverage_note": "Docta es el repositorio actual, sucesor de E-Prints. Biblioteca confirma colecciones TFG/TFM. Sin registros piloto. /server/oai/request devolvió 404: base OAI pendiente de auditoría.",
+    "license_note": "Las condiciones de depósito varían por facultad y pueden seleccionar calificaciones altas; no es un censo de todos los trabajos defendidos. Sin licencia global de metadatos comprobada.",
+    "evidence_urls": [
+      "https://biblioteca.ucm.es/inf/tfg-tfm",
+      "https://biblioteca.ucm.es/fsl/normativa-tfg",
+      "https://www.ucm.es/periodismo-multimedia-profesional/deposito-del-tfm-en-e%E2%80%90prints-complutense"
+    ],
+    "checked_at": "2026-10-16",
+    "pilot_records": 0,
+    "metadata_license": null
+  }
+]
