@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "synesis-research-225-2026-10-16",
+  "snapshot_date": "2026-10-16",
+  "records": 225,
+  "institutions": {
+    "hkust": 10,
+    "mit": 10,
+    "tu_berlin": 10,
+    "uev": 90,
+    "upv": 100,
+    "usp": 5
+  },
+  "files": [
+    {
+      "path": "spain.jsonl",
+      "records": 190,
+      "bytes": 254709,
+      "sha256": "5bc4144042aba1ad1716bbfeadfa0e223d2bb448787da7872fb2fc7aaf9b0ce2"
+    },
+    {
+      "path": "global.jsonl",
+      "records": 35,
+      "bytes": 39812,
+      "sha256": "0e8554febcdc0eea5a636c87baed65ebe0b07392edddcf0676c82518e66c40c3"
+    }
+  ],
+  "permissions_file": "PERMISSIONS.json",
+  "distribution_basis": "permission_confirmed_by_project_owner",
+  "unique_id_count": 225,
+  "overlap_with_cc0_pilot": {
+    "records": 10,
+    "relation": "data/pilot/rights_cleared.jsonl is a subset of this snapshot; do not concatenate to count research records"
+  },
+  "content": "Bibliographic metadata only; titles, subjects, provenance, source dates, degree evidence and observed rights fields. No abstracts, PDFs, author or contact fields.",
+  "training_status": "No human labels or trained weights; a metadata research snapshot for future experiments, not a validated supervised training set."
+}

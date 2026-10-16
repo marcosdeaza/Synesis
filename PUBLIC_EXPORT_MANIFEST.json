@@ -1,5 +1,5 @@
 {
-  "variant": "public_metadata_cc0",
+  "variant": "cc0_pilot_with_owner_authorized_research_snapshot",
   "created_at": "2026-10-16T07:00:35Z",
   "local_audit_records": 225,
   "local_audit_institutions": {
@@ -33,19 +33,28 @@
   },
   "license_scope": "CC0 covers selected metadata only; no license for theses, PDFs or model training is inferred.",
   "exclusions": [
-    "original pilot datasets",
     "raw",
     "harvests",
     "caches",
     ".git",
     "original reports/features",
     "original plots",
-    "original local CONTEXTO.md; public index substituted"
+    "original local CONTEXTO.md; public index substituted",
+    "thesis full text, abstracts and personal author/contact fields"
   ],
   "notebooks": "code outputs, execution counts and attachments removed",
   "offline_build": "python -m synesis.cli --root <export> build; succeeded",
-  "remote_publication": "Published publicly at repository_url; GitHub Actions passed 20 tests and offline reproduction",
+  "remote_publication": "CC0 pilot already published; owner-authorized research snapshot prepared for public upload",
   "repository_url": "https://github.com/marcosdeaza/Synesis",
   "visibility": "public",
-  "verification_run_url": "https://github.com/marcosdeaza/Synesis/actions/runs/38865478996"
+  "verification_run_url": "https://github.com/marcosdeaza/Synesis/actions/runs/38865478996",
+  "scope": "This export manifest describes the 10-record CC0 pilot; the full research snapshot has its own manifest at research_snapshot.manifest",
+  "repository_unique_records": 225,
+  "research_snapshot": {
+    "path": "data/research_225",
+    "manifest": "data/research_225/manifest.json",
+    "permissions": "data/research_225/PERMISSIONS.json",
+    "records": 225,
+    "authorization": "permission_confirmed_by_project_owner"
+  }
 }

@@ -1,12 +1,13 @@
 # Reproducción y procedencia técnica
 
-## Tres operaciones distintas
+## Operaciones y colecciones distintas
 
 | Operación | Red | Resultado |
 |---|---|---|
-| Reproducir snapshot | No | Mismas 225 entradas locales → validación, señales, tablas y manifiesto |
+| Validar la colección completa | No | 225 metadatos en `data/research_225/` → comprobación de esquema, unicidad, recuentos y hashes; informe `reports/research_225_validation.json` |
+| Reproducir el análisis piloto | No | Diez metadatos CC0 de `data/pilot/rights_cleared.jsonl` → señales, tablas, informes y manifiesto del pipeline |
 | Volver a consultar una fuente | Sí, respetando condiciones | Captura nueva, potencialmente distinta por migraciones, correcciones y orden del servidor |
-| Publicar corpus | No se activa por consultar | Requiere selección y fundamento específico; exportación CC0 acotada |
+| Publicar colecciones | No se activa por consultar | Los 225 ya están autorizados por el responsable y se distribuyen con permiso y manifiesto propios; el piloto CC0 conserva su evidencia institucional |
 
 ## Entorno
 
@@ -18,6 +19,16 @@ python3 -m pip install -e '.[figures]'
 make figures
 ```
 
+`make reproduce` ejecuta ambas comprobaciones: reconstruye el análisis del piloto de diez y valida por separado los 225 mediante `scripts/check_research_snapshot.py`, además de las pruebas. Las figuras analíticas siguen usando exclusivamente las tablas del piloto. Los diez se solapan con la colección completa; no se concatenan para contar 235 trabajos.
+
+Para verificar únicamente la carpeta completa:
+
+```bash
+python3 scripts/check_research_snapshot.py
+```
+
+El comprobador contrasta [`data/research_225/manifest.json`](../data/research_225/manifest.json), los archivos y la procedencia del permiso en [`PERMISSIONS.json`](../data/research_225/PERMISSIONS.json). La validación de integridad no se presenta como validación independiente del permiso declarado por el responsable. Los campos de licencias de origen permanecen intactos.
+
 En Windows sin `make`, usar los dos comandos Python del README y `python scripts/render_figures.py`, configurando `PYTHONPATH=src` según la terminal. Las pruebas usan fixtures marcados como tales; no entran en el corpus.
 
 ## Cosechador OAI
@@ -28,10 +39,10 @@ En Windows sin `make`, usar los dos comandos Python del README y `python scripts
 
 No todos los comparadores tienen el mismo mecanismo: MIT/TU usan API de DSpace para campos cualificados; USP usa fichas HTML verificadas tras problemas de paginación; HKUST usa un listado oficial de departamento tras restricciones del portal. Las peticiones de origen y las reglas están documentadas en las fichas. Esta versión no promete un conector automático general para esos cuatro mecanismos.
 
-El snapshot minimizado sí permite repetir exactamente todas las transformaciones ya entregadas. La captura original no se declara reproducible byte a byte desde Internet: las fuentes son dinámicas y los brutos contienen campos que no se redistribuyen.
+El piloto minimizado de diez permite repetir las transformaciones analíticas entregadas; la carpeta de 225 permite verificar la integridad de la colección completa publicada. No se atribuyen a los 225 las señales o figuras calculadas únicamente sobre diez. La captura original no se declara reproducible byte a byte desde Internet: las fuentes son dinámicas y los brutos contienen campos que no se redistribuyen.
 
 ## Verificación y revisión
 
 Las pruebas protegen contra inferir autoría de una coincidencia léxica, convertir desconocidos en negativos, aceptar duplicados o fechas imposibles y filtrar mal niveles de titulación. Los informes no excluyen silenciosamente filas inválidas: registran incidencias y la comprobación falla si las hay.
 
-La integración automática ejecuta el piloto sin red ni claves y comprueba que no cambien los resultados versionados. No automatiza scraping periódico ni publicación de datos nuevos. Antes de ampliar las pruebas, debe existir un cambio o riesgo concreto que las justifique.
+La integración automática reproduce el piloto y valida la carpeta de 225 sin red ni claves, comprobando los resultados y la integridad de archivos versionados. No automatiza scraping periódico ni publicación de datos nuevos. Antes de ampliar las pruebas, debe existir un cambio o riesgo concreto que las justifique.

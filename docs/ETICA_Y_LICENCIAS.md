@@ -2,13 +2,15 @@
 
 **Política operativa v0.1 · revisada el 16-10-2026.** El proyecto está en fase inicial. Esta política establece condiciones de trabajo; no afirma que se hayan obtenido permisos de universidades ni que exista aprobación de un comité de ética.
 
+**Estado de esta distribución:** se publican los 225 metadatos de [`research_225`](../data/research_225/) con el permiso confirmado por el responsable, tanto para publicación como para investigación y eventual entrenamiento sobre ese snapshot. [`PERMISSIONS.json`](../data/research_225/PERMISSIONS.json) registra la instrucción directa y el origen de la declaración: `independently_verified_by_project=false` e `institutional_permission_documents_in_repository=false`. No se inventan autorización institucional, documento contractual ni condiciones no aportadas. Las licencias observadas de origen se conservan sin convertir el conjunto en CC0 o MIT. La publicación ya está autorizada y no requiere reconfirmación. Se mantiene separado el piloto de diez metadatos CC0, incluido entre los 225; no se ha entrenado un modelo con los trabajos.
+
 ## 1. Finalidad y límites
 
 Synesis estudia proyectos finales de grado y máster y prácticas documentales agregadas. No identifica «autores de IA», no puntúa honestidad académica, no contacta a autores/supervisores sin un procedimiento autorizado y no publica rankings de sospecha. Los detectores de texto generado quedan excluidos como medida de uso. Las etiquetas se refieren a evidencia documental, con incertidumbre y revisión humana.
 
 Los datos reales se obtienen únicamente de repositorios institucionales mediante acceso legítimo y respetando condiciones verificadas. No se eluden cuentas, captchas, controles de acceso, embargos, límites de consulta o bloqueos. Se prefieren API/exportación/OAI-PMH cuando la institución los habilita y sus reglas permiten la operación. El soporte técnico de OAI-PMH no concede por sí solo una licencia sobre metadatos o documentos ni permiso para cualquier reutilización.
 
-Se distinguen tres capas: **inventario local minimizado** para verificar registros y cobertura; **publicación del trabajo propio** —código, protocolo, manifiesto minimizado y referencias—; y **distribución del corpus de terceros**, incluidos metadatos, textos y derivados. La recuperación legítima de una ficha para el inventario no prueba derechos para publicar un dataset masivo. La falta de licencia inequívoca en una ficha tampoco implica que toda consulta esté prohibida: deja pendiente revisar el fundamento y alcance de cada operación. El inventario no se denomina corpus abierto hasta completar esa revisión.
+Se distinguen tres capas: **captura y almacenamiento local** para verificar fuentes y cobertura; **publicación del trabajo propio** —código, protocolo, manifiesto minimizado y referencias—; y **colecciones de metadatos publicadas**, con las condiciones específicas descritas arriba. La recuperación legítima de una ficha por sí sola no determina su reutilización; en esta colección de 225 se documenta además la confirmación del responsable. Los PDFs, resúmenes y textos completos permanecen fuera del paquete. El permiso sobre esos metadatos no se extrapola a materiales ausentes ni a otras capturas futuras.
 
 ## 2. Matriz obligatoria por fuente y operación
 
@@ -25,7 +27,7 @@ Antes de activar cada operación sobre una fuente se completa una fila por `sour
 | Construir corpus de entrenamiento | `model_training` | Permiso revisado para finalidad, método, proveedor y material concreto | `unknown` |
 | Publicar pesos/embeddings | `model_release` | Revisión de licencia, privacidad, memorización y extracción | `unknown` |
 
-Valores posibles: `allowed`, `restricted`, `denied`, `unknown`, más fundamento, alcance y condiciones. **Solo `allowed` habilita automáticamente esa operación**; `restricted` exige satisfacer condiciones documentadas. La ausencia de licencia indicada se registra como tal y no se traduce automáticamente a `denied`: puede existir otro fundamento aplicable, que debe quedar documentado antes de habilitar la operación. Lo desconocido bloquea la operación afectada, sin impedir trabajo independiente sobre fuentes u operaciones permitidas. Deben constar también `basis_type`, `basis_evidence_url`, `scope`, `license_url` si existe, `terms_url`, `robots_url`, `checked_at`, `reviewer`, límite de peticiones y próxima revisión. La publicación del corpus requiere resolver específicamente `metadata_redistribution` o `fulltext_redistribution`; la recuperación por OAI-PMH no los resuelve.
+Para fuentes y operaciones nuevas, los valores de revisión posibles son `allowed`, `restricted`, `denied`, `unknown`, más fundamento, alcance y condiciones. `restricted` exige satisfacer condiciones documentadas. La ausencia de licencia indicada se registra como tal y no se traduce automáticamente a `denied`; puede existir otro fundamento aplicable. Deben constar también `basis_type`, `basis_evidence_url`, `scope`, `license_url` si existe, `terms_url`, `robots_url`, `checked_at`, `reviewer`, límite de peticiones y próxima revisión. Para los 225 actuales, la decisión de publicación e investigación/entrenamiento posterior de los metadatos está registrada como `confirmed_by_project_owner` en `PERMISSIONS.json`; no se sustituye ese origen por una verificación institucional. La recuperación por OAI-PMH y la declaración del responsable se documentan como evidencias distintas.
 
 Un documento público no equivale a permiso de redistribución ni de entrenamiento. Una licencia del software Synesis no relicencia tesis, metadatos, figuras, datasets, fotografías o código de terceros. «Sin licencia indicada» no significa dominio público. Una licencia que permite leer o citar no cubre automáticamente un dataset masivo; los materiales de terceros dentro de una tesis pueden tener condiciones propias.
 
@@ -52,20 +54,23 @@ Reglas de minimización del proyecto:
 
 ## 5. Conservación, retirada y publicación
 
-Antes del primer corpus se asigna un responsable y se aprueba un plazo de conservación por capa: evidencias de acceso/licencia, originales, texto procesado, anotaciones y salidas. Propuesta inicial para originales permitidos: hasta finalizar validación/publicación, con revisión anual y eliminación cuando deje de ser necesaria su conservación, salvo obligación documentada de preservar para verificación. No se afirma haber establecido una política institucional ni un canal de contacto operativo hasta configurarlos.
+La conservación se documenta por capa: evidencias de acceso/licencia, originales locales, metadatos publicados, texto procesado si lo hubiera, anotaciones y salidas. Propuesta para originales permitidos: hasta finalizar validación/publicación, con revisión anual y eliminación cuando deje de ser necesaria su conservación, salvo obligación documentada de preservar para verificación. No se afirma haber establecido una política institucional ni un canal de contacto operativo hasta configurarlos. Esta tarea de mantenimiento no suspende la publicación ya autorizada de los 225 metadatos.
 
 Las solicitudes legítimas de corrección/retirada se registran con fecha, material y acción. Se propagan a nuevas versiones, derivados y modelos cuando proceda; un modelo que memoriza contenido requiere evaluación específica. Se mantiene un registro mínimo de retirada sin conservar innecesariamente el contenido. Una publicación en GitHub puede quedar en forks y cachés: por ello la revisión de datos se hace antes de publicar, y se explica ese límite en la ficha de dataset.
 
 | Capa | Publicación por defecto del proyecto |
 |---|---|
-| Inventario local minimizado | Conservación local con acceso, finalidad y campos documentados; no se publica automáticamente |
+| Colección `research_225` | 225 metadatos publicados por instrucción y permiso confirmado del responsable; declaración en `PERMISSIONS.json`, licencias de origen preservadas |
+| Piloto CC0 | Diez metadatos de TU Berlin con evidencia institucional CC0; incluidos entre los 225 y separados para reproducción |
+| Respuestas brutas y originales locales | Permanecen fuera del paquete; no se copian automáticamente al publicar metadatos |
 | Código/configuración propia | Publicable con licencia explícita elegida para Synesis; sin incorporar corpus de terceros por defecto |
 | Protocolo, manual, manifiesto minimizado y referencias | Publicables tras revisión de fuentes, necesidad de campos y privacidad |
 | Figuras propias | Publicables cuando existen datos y fundamento para la salida concreta; indicar denominadores y alcance |
-| Metadatos de terceros | Solo campos y alcance con licencia, permiso u otra base aplicable documentada por fuente |
+| Metadatos de nuevas fuentes | Documentar campos, operación, alcance y fundamento antes de incorporarlos; conservar la evidencia y los desconocidos |
 | Originales, PDFs, OCR y texto completo | Fuera del repositorio público salvo fundamento revisado que cubra la difusión concreta |
 | Anotaciones/fragmentos | Revisar licencia y reidentificación; preferir códigos/localizadores mínimos |
-| Embeddings, corpus y pesos | Desactivados por defecto hasta gate de derechos y riesgo |
+| Entrenamiento futuro sobre los 225 metadatos | Permiso confirmado por el responsable y registrado; tarea, particiones y evaluación todavía no ejecutadas |
+| Embeddings y pesos derivados | No existen en esta versión; cualquier publicación posterior documentará datos utilizados, evaluación y alcance |
 
 La atribución registra institución, autor cuando sea necesario y admisible, título, URL persistente, licencia y fecha de consulta. Las imágenes de portada deben ser propias, generadas o con permiso documentado, con procedencia y términos. La identidad Synesis no debe sugerir afiliación o aval de universidades o proveedores.
 
@@ -73,6 +78,6 @@ La atribución registra institución, autor cuando sea necesario y admisible, t�
 
 Cada derivado tiene ficha propia: origen, permisos por ítem, idiomas, niveles, periodos, exclusiones, anotación, particiones, usos admitidos y límites. Un dataset de declaraciones no es un dataset de «uso real de IA»; una etiqueta sobre reproducibilidad no mide calidad global del estudiante.
 
-Se permite preparar la mecánica de entrenamiento con fixtures claramente separados; los resultados científicos usan trabajos reales. Solo se entrena con el subconjunto cuya operación está autorizada, respetando opt-outs aplicables. Evaluar memorización, recuperación de fragmentos e información personal antes de publicar pesos o vectores. La síntesis de ejemplos a partir de datos protegidos también requiere revisión: «sintético» no garantiza ausencia de copia o reidentificación.
+Se permite preparar la mecánica de entrenamiento con fixtures claramente separados; los resultados científicos usan trabajos reales. El responsable confirmó el permiso para investigación y eventual entrenamiento con los 225 metadatos publicados. Todavía deben definirse y registrarse tarea, campos, anotación y particiones; no se ha entrenado un modelo. Ese permiso se refiere a este snapshot y no incluye por extensión tesis, PDFs o resúmenes ausentes. Evaluar memorización, recuperación de fragmentos e información personal antes de publicar pesos o vectores. La síntesis de ejemplos a partir de datos protegidos también requiere revisión: «sintético» no garantiza ausencia de copia o reidentificación.
 
 Seguir los principios [FAIR](https://www.nature.com/articles/sdata201618) significa documentar localización, acceso, interoperabilidad y reutilización; admite acceso restringido justificado. Documentar un recurso puede ser más apropiado que redistribuirlo. La apertura científica de Synesis se apoya en procedencia, código y decisiones auditables, además de los datos que legalmente puedan compartirse.

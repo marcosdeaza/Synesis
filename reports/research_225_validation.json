@@ -1,0 +1,21 @@
+{
+  "snapshot_id": "synesis-research-225-2026-10-16",
+  "records": 225,
+  "institutions": {
+    "hkust": 10,
+    "mit": 10,
+    "tu_berlin": 10,
+    "uev": 90,
+    "upv": 100,
+    "usp": 5
+  },
+  "issue_count": 0,
+  "sha256": {
+    "spain.jsonl": "5bc4144042aba1ad1716bbfeadfa0e223d2bb448787da7872fb2fc7aaf9b0ce2",
+    "global.jsonl": "0e8554febcdc0eea5a636c87baed65ebe0b07392edddcf0676c82518e66c40c3"
+  },
+  "pilot_overlap_records": 10,
+  "repository_unique_records": 225,
+  "permissions_status": "permission_confirmed_by_project_owner",
+  "abstracts_distributed": 0
+}

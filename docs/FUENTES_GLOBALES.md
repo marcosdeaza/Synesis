@@ -1,6 +1,8 @@
 # Auditoría internacional de fuentes de Synesis
 
-Consulta: **16 de octubre de 2026**. Esta auditoría identifica cuatro comparadores y aporta **35 registros bibliográficos reales** en `data/pilot/global.jsonl`. La muestra prueba extracción, trazabilidad y diferencias entre fuentes. Es intencional y pequeña: sus proporciones **no estiman producción universitaria, prevalencia de IA ni efectos causales**. Se conservaron títulos, fechas, materias y evidencia de grado; no se descargaron PDF ni se publicaron autores, correos o abstracts.
+Consulta: **16 de octubre de 2026**. Esta auditoría identifica cuatro comparadores y aporta **35 registros bibliográficos reales**, publicados en [`data/research_225/global.jsonl`](../data/research_225/global.jsonl). La muestra prueba extracción, trazabilidad y diferencias entre fuentes. Es intencional y pequeña: sus proporciones **no estiman producción universitaria, prevalencia de IA ni efectos causales**. Se conservaron títulos, fechas, materias y evidencia de grado; no se descargaron PDF ni se publicaron autores, correos o resúmenes.
+
+La colección completa de 225, incluidos estos 35, se publica por solicitud del responsable, quien confirmó que cuenta con permiso para publicación y uso investigacional o entrenamiento posterior de esos metadatos. [`PERMISSIONS.json`](../data/research_225/PERMISSIONS.json) registra la declaración y su origen sin presentarla como validación independiente o autorización institucional verificada. Las licencias observadas de cada fuente se preservan. El piloto CC0 automatizado contiene por separado diez registros de TU Berlin, ya incluidos entre los 225.
 
 | Comparador | Cobertura verificada | Piloto | Vía que respondió | Limitación principal |
 |---|---|---:|---|---|
@@ -57,7 +59,7 @@ No se verificó una licencia abierta general de metadatos. `dc.rights=publico` e
 
 ## Semántica del piloto y siguiente cosecha
 
-Este snapshot puede conservarse como **inventario local de referencias bibliográficas con derechos por fuente pendientes de revisión**. La minimización no constituye una licencia abierta ni autoriza automáticamente su distribución pública, el entrenamiento o la redistribución de las obras. Cada release deberá registrar qué campos y fuentes pueden publicarse y el fundamento de esa decisión; la licencia del código Synesis no relicencia estos metadatos.
+Este snapshot se distribuye como parte de la **colección pública de 225 metadatos**, según la confirmación del responsable registrada en `PERMISSIONS.json`. La minimización y esa declaración no se presentan como una licencia abierta universal ni como permiso sobre las tesis o materiales ausentes. Cada release registra campos, fuentes, cambios y fundamento; la licencia del código Synesis no relicencia estos metadatos y no se ha entrenado un modelo con ellos.
 
 - `date_semantics=dc_date_issued`: en MIT y TU Berlin se verificó el campo cualificado `dc.date.issued`, sin confirmar que represente defensa o entrega. `academic_date_verified=false` impide tratarlo automáticamente como fecha académica.
 - `date_semantics=defense_date_explicit`: en USP, el valor de `dc.date.issued` coincide con la fecha rotulada **Data de Defesa** en la ficha. Estos cinco registros tienen `academic_date_verified=true`; la disponibilidad/publicación es otra fecha y se conserva en `date_evidence`.

@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "recorded_at": "2026-10-16",
+  "status": "permission_confirmed_by_project_owner",
+  "declaration_source": "Direct instruction from the project owner in the Synesis working conversation",
+  "declaration": "Subir los 225 registros al repositorio público para investigación y eventual entrenamiento; el responsable confirma que tiene permiso.",
+  "operations": {
+    "public_metadata_redistribution": "confirmed_by_project_owner",
+    "research_and_future_model_training_on_this_metadata_snapshot": "confirmed_by_project_owner"
+  },
+  "scope": {
+    "files": [
+      "spain.jsonl",
+      "global.jsonl"
+    ],
+    "records": 225,
+    "material": "Existing minimized metadata records only; no thesis PDFs or abstract texts"
+  },
+  "independently_verified_by_project": false,
+  "institutional_permission_documents_in_repository": false,
+  "licensing": "Source license fields are preserved as observed. This declaration does not assign CC0, MIT or a new blanket license to third-party metadata.",
+  "model_training_performed": false
+}

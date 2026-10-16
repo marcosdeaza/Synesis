@@ -1,6 +1,8 @@
 # Fuentes españolas de Synesis
 
-Auditoría: **16 de octubre de 2026**. El piloto contiene **190 registros reales de metadatos**: 90 de la Universidad Europea de Valencia (UEV, obligatoria) y 100 de la Universitat Politècnica de València (UPV). Los títulos proceden de respuestas OAI-PMH institucionales; no son ejemplos sintéticos. No se descargaron PDFs ni se exportaron autores, directores, correos o campos `contributor`. Se omiten los textos completos de los resúmenes.
+Auditoría: **16 de octubre de 2026**. La captura española inicial contiene **190 registros reales de metadatos**: 90 de la Universidad Europea de Valencia (UEV, obligatoria) y 100 de la Universitat Politècnica de València (UPV). Ya se publican en [`data/research_225/spain.jsonl`](../data/research_225/spain.jsonl), dentro de la colección completa de 225. Los títulos proceden de respuestas OAI-PMH institucionales; no son ejemplos sintéticos. No se descargaron PDFs ni se exportaron autores, directores, correos o campos `contributor`. Se omiten los textos completos de los resúmenes.
+
+El responsable confirmó permiso para publicar los 225 metadatos y usarlos en investigación y eventual entrenamiento; [`PERMISSIONS.json`](../data/research_225/PERMISSIONS.json) registra esa declaración sin validación independiente ni autorización institucional verificada. Las licencias observadas abajo se conservan como evidencia de origen y no se convierten en CC0. El pipeline público sigue utilizando por separado diez registros CC0 de TU Berlin; este documento describe la captura española, no las entradas de ese pipeline.
 
 ## Qué demuestra este piloto
 
@@ -61,7 +63,7 @@ Dos políticas verificadas facilitan una expansión responsable:
 - [DDD UAB, Identify](https://ddd.uab.cat/oai2d?verb=Identify) declara metadatos con dedicación de dominio público [CC0](https://creativecommons.org/publicdomain/zero/1.0/) y licencias individuales para el texto completo.
 - [Archivo Digital UPM, Identify](https://oa.upm.es/cgi/oai2?verb=Identify) permite cosechar metadatos a través de OAI y prohíbe la cosecha de texto completo. Esa prohibición debe conservarse al desarrollar cualquier conector.
 
-No se aplica la licencia del código de Synesis a obras o metadatos de terceros. Para un dataset de entrenamiento o redistribución de resúmenes se necesita una revisión separada de derechos y de condiciones por repositorio y registro.
+No se aplica la licencia del código de Synesis a obras o metadatos de terceros. El permiso confirmado por el responsable incluye la publicación e investigación/entrenamiento futuro sobre los metadatos entregados, sin que se haya entrenado un modelo. No se extiende a resúmenes o textos completos: incorporarlos requeriría documentar un alcance distinto por repositorio y registro.
 
 ## Procedencia exacta y manifiesto
 

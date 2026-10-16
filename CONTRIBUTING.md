@@ -6,7 +6,9 @@ Cada nueva fuente necesita URL institucional, alcance de niveles, cobertura y se
 
 Los datos nuevos deben ser reales y guardar identificador persistente, procedencia y fecha de consulta. Conservar originales en almacenamiento local ignorado y añadir hashes al manifiesto. No completar campus, nivel, año, licencia o declaración de IA con suposiciones. Documentar las exclusiones y el método de selección antes de comparar grupos.
 
-Una contribución revisable explica el problema, la evidencia, el cambio y su validación. Ejecutar `make reproduce`; si cambian datos o figuras, regenerar tablas y gráficos y actualizar la ficha. No añadir tests que simplemente repitan una expresión: comprobar errores que puedan cambiar la interpretación o comprometer la minimización.
+La distribución actual contiene dos colecciones: `data/research_225/` publica 225 metadatos con permiso confirmado por el responsable, registrado en su `PERMISSIONS.json`; `data/pilot/rights_cleared.jsonl` conserva diez metadatos CC0 para el análisis reproducible. Los diez ya están incluidos entre los 225. Mantener ambas procedencias y sus manifiestos, sin convertir la declaración del responsable en una licencia CC0 ni cambiar las licencias observadas de origen. No añadir PDFs, resúmenes o campos personales como si formaran parte de ese alcance.
+
+Una contribución revisable explica el problema, la evidencia, el cambio y su validación. Ejecutar `make reproduce`, que valida los 225 y reconstruye por separado el análisis del piloto de diez. Si cambian datos o figuras, indicar qué colección afecta el cambio, actualizar su manifiesto y regenerar las salidas correspondientes. No añadir tests que simplemente repitan una expresión: comprobar errores que puedan cambiar la interpretación o comprometer la minimización.
 
 Etiquetas de trabajo sugeridas: `source-audit`, `date-semantics`, `rights-review`, `annotation`, `analysis`, `reproducibility`, `translation`. No publicar tesis completas o incidencias que expongan información sensible en una issue.
 

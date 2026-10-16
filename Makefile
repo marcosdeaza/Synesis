@@ -5,6 +5,7 @@ reproduce: check test
 
 check:
 	PYTHONPATH=src $(PYTHON) -m synesis.cli check
+	$(PYTHON) scripts/check_research_snapshot.py
 
 test:
 	PYTHONPATH=src $(PYTHON) -m unittest discover -s tests -v

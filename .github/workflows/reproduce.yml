@@ -1,4 +1,4 @@
-name: Reproduce the public metadata pilot
+name: Reproduce pilot and validate full research snapshot
 on:
   push:
   pull_request:
@@ -13,7 +13,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Validate and rebuild without network or credentials
+      - name: Rebuild CC0 pilot and validate all 225 research records offline
         run: make reproduce
       - name: Check generated tables are current
         run: git diff --exit-code -- reports
