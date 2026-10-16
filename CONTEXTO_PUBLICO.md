@@ -1,6 +1,6 @@
 # Synesis · continuidad pública
 
-**Estado actual:** repositorio público [marcosdeaza/Synesis](https://github.com/marcosdeaza/Synesis), rama `main`. Se incorpora la carpeta `data/research_225/` por petición expresa del responsable, que confirma disponer de permiso para publicarla y para investigación y eventual entrenamiento. Se conserva aparte el piloto CC0 de diez registros.
+**Estado actual:** repositorio público [marcosdeaza/Synesis](https://github.com/marcosdeaza/Synesis), rama `main`. Publicada y verificada la carpeta `data/research_225/` por petición expresa del responsable, que confirma disponer de permiso para publicarla y para investigación y eventual entrenamiento. Se conserva aparte el piloto CC0 de diez registros.
 
 La auditoría contiene 225 registros reales. La carpeta `data/research_225/` publica el snapshot completo (UEV 90, UPV 100, MIT 10, TU Berlin 10, HKUST 10, USP 5), con el permiso confirmado por el responsable en `PERMISSIONS.json`. `data/pilot/` conserva el subconjunto de diez registros con CC0 y evidencia verificable. Los diez están incluidos entre los 225; la unión no es 235.
 
@@ -51,4 +51,5 @@ En la entrega local anterior a la publicación, la carpeta estaba inicializada s
 - Sin PDFs, resúmenes, campos de autoría ni emails. No se ha entrenado un modelo. Los 225 son metadatos reales, no 225 documentos completos.
 - `make reproduce` ahora valida ambas colecciones por separado: hashes, 225 identidades únicas, recuentos, minimización y solapamiento exacto de los diez CC0. Las figuras y el análisis del piloto CC0 siguen sobre diez; no se presentan como resultados de 225.
 - Las restricciones iniciales de distribución a solo diez corresponden a la entrega histórica anterior. La decisión posterior del responsable amplía el alcance publicado a 225 mediante una autorización documentada distinta de CC0.
-- En curso: actualizar documentación, subir el commit y verificar las comprobaciones remotas.
+- Publicación completada en el commit `21d4955`. GitHub verificó los 225 registros, las 20 pruebas existentes y la reproducción del piloto sin diferencias: [ejecución correcta](https://github.com/marcosdeaza/Synesis/actions/runs/38866772837). Se descargaron los dos archivos desde la API de GitHub y sus hashes y recuentos coinciden con los originales.
+- Siguiente paso: definir el experimento que vaya a usar estos metadatos; no se ha iniciado entrenamiento en esta petición.

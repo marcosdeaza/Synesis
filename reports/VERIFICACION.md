@@ -18,3 +18,5 @@
 - Los diez registros del piloto CC0 son un subconjunto idéntico; unión de 225 trabajos, sin doble contabilización.
 - `make reproduce` valida también este snapshot; el informe está en `research_225_validation.json`.
 - Comprobación negativa de integridad: un cambio de bytes fue rechazado por discrepancia de checksum.
+
+- Snapshot completo verificado también en GitHub: https://github.com/marcosdeaza/Synesis/actions/runs/38866772837. Ambos archivos remotos coinciden por SHA-256 y recuento con los originales.
