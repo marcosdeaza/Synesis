@@ -44,7 +44,8 @@
   ],
   "notebooks": "code outputs, execution counts and attachments removed",
   "offline_build": "python -m synesis.cli --root <export> build; succeeded",
-  "remote_publication": "Public repository created; initial push and CI verification in progress",
+  "remote_publication": "Published publicly at repository_url; GitHub Actions passed 20 tests and offline reproduction",
   "repository_url": "https://github.com/marcosdeaza/Synesis",
-  "visibility": "public"
+  "visibility": "public",
+  "verification_run_url": "https://github.com/marcosdeaza/Synesis/actions/runs/38865478996"
 }

@@ -7,4 +7,5 @@
 - Enlaces Markdown internos: cero destinos ausentes.
 - Figuras: renderizadas desde los datos de esta variante e inspeccionadas visualmente; PNG, SVG y PDF.
 - No hay etiquetas humanas finalizadas, modelos entrenados, efectos causales ni revisión por pares.
-- Publicación remota pendiente; este informe valida artefactos locales.
+- Publicación pública comprobada en https://github.com/marcosdeaza/Synesis.
+- Reproducción remota correcta: https://github.com/marcosdeaza/Synesis/actions/runs/38865478996 (20 pruebas y reconstrucción sin cambios).

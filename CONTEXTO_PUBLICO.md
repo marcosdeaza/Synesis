@@ -1,5 +1,7 @@
 # Synesis · continuidad pública
 
+**Estado actual:** repositorio público creado y contenido subido a [marcosdeaza/Synesis](https://github.com/marcosdeaza/Synesis), rama `main`. La reproducción automática en GitHub se verificó correctamente: 20 pruebas y cero incidencias.
+
 Esta variante parte de una auditoría local de 225 registros reales. Distribuye 10 filas cuya licencia de metadatos es exactamente `CC0-1.0` y cuya evidencia de licencia tiene URL verificable. Recuento público: `{"tu_berlin": 10}`.
 
 La memoria operativa completa del origen se denomina `CONTEXTO.md`; deliberadamente no se incluye en esta distribución. Este archivo conserva el contexto necesario para continuar con los materiales públicos, sin afirmar acceso al inventario local completo.
@@ -28,7 +30,7 @@ Pendientes: cerrar permisos del núcleo valenciano, auditar fechas académicas, 
 
 Exportación real completada: 10/10 registros TU Berlin, cero incidencias; 20/20 pruebas de software correctas. Figuras de composición, cobertura y cronología regeneradas para esta variante en PNG/SVG/PDF. Cero enlaces Markdown internos rotos. Cuaderno entregado sin outputs ni adjuntos.
 
-La carpeta pública está inicializada como repositorio Git, rama `main`, sin commit ni remoto. Faltan identidad de autor de Git, autenticación válida de GitHub y elección de visibilidad; no se inventaron nombres/emails. La memoria local completa se conserva fuera de esta variante. El siguiente paso científico es cerrar permisos del núcleo valenciano y verificar fechas; el siguiente paso de distribución es conectar GitHub y publicar esta carpeta revisada.
+En la entrega local anterior a la publicación, la carpeta estaba inicializada sin commit ni remoto, con autenticación e identidad por resolver; ese estado quedó superado por la publicación registrada abajo. La memoria local completa se conserva fuera de esta variante. El siguiente paso científico es cerrar permisos del núcleo valenciano y verificar fechas; el siguiente paso de distribución es conectar GitHub y publicar esta carpeta revisada.
 
 
 ## Publicación autorizada · 16 de octubre de 2026
@@ -37,4 +39,6 @@ La carpeta pública está inicializada como repositorio Git, rama `main`, sin co
 - Autenticación comprobada; cuenta efectiva `marcosdeaza`. Creado el repositorio público https://github.com/marcosdeaza/Synesis.
 - Configurada identidad Git local con el nombre verificado de la cuenta y su dirección noreply de GitHub; no se atribuye con ello revisión o responsabilidad científica institucional.
 - Alcance de datos conservado: diez registros TU Berlin, metadatos CC0 con evidencia. Los otros 215 registros locales no se incorporan al historial público.
-- Actualizados README, cita y guía de publicación. Próximo paso operativo: primer commit, push y comprobación de la reproducción remota. Al concluir, registrar resultado y siguiente pendiente científico.
+- Actualizados README, cita y guía de publicación. Primer commit y push completados. La visibilidad pública y la rama `main` se verificaron mediante API de GitHub. Reproducción remota confirmada: [ejecución correcta](https://github.com/marcosdeaza/Synesis/actions/runs/38865478996), 20 pruebas y cero incidencias. Siguiente paso científico: cerrar permisos y semántica temporal del núcleo valenciano.
+
+- Comprobación final de publicación: GitHub Actions completó correctamente el primer commit. Código y dataset publicados; no quedan pasos de autenticación o visibilidad pendientes.
