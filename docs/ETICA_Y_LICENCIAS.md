@@ -1,6 +1,6 @@
 # Ética, acceso y licencias · Synesis
 
-**Política operativa v0.1 · revisada el 16-10-2026.** El proyecto está en fase inicial. Esta política establece condiciones de trabajo; no afirma que se hayan obtenido permisos de universidades ni que exista aprobación de un comité de ética.
+**Política operativa v0.2 · revisada el 20-10-2026.** El proyecto está en fase inicial. Esta política establece condiciones de trabajo; no afirma que se hayan obtenido permisos de universidades ni que exista aprobación de un comité de ética.
 
 **Estado de esta distribución:** se publican los 225 metadatos de [`research_225`](../data/research_225/) con el permiso confirmado por el responsable, tanto para publicación como para investigación y eventual entrenamiento sobre ese snapshot. [`PERMISSIONS.json`](../data/research_225/PERMISSIONS.json) registra la instrucción directa y el origen de la declaración: `independently_verified_by_project=false` e `institutional_permission_documents_in_repository=false`. No se inventan autorización institucional, documento contractual ni condiciones no aportadas. Las licencias observadas de origen se conservan sin convertir el conjunto en CC0 o MIT. La publicación ya está autorizada y no requiere reconfirmación. Se mantiene separado el piloto de diez metadatos CC0, incluido entre los 225; no se ha entrenado un modelo con los trabajos.
 
@@ -10,7 +10,7 @@ Synesis estudia proyectos finales de grado y máster y prácticas documentales a
 
 Los datos reales se obtienen únicamente de repositorios institucionales mediante acceso legítimo y respetando condiciones verificadas. No se eluden cuentas, captchas, controles de acceso, embargos, límites de consulta o bloqueos. Se prefieren API/exportación/OAI-PMH cuando la institución los habilita y sus reglas permiten la operación. El soporte técnico de OAI-PMH no concede por sí solo una licencia sobre metadatos o documentos ni permiso para cualquier reutilización.
 
-Se distinguen tres capas: **captura y almacenamiento local** para verificar fuentes y cobertura; **publicación del trabajo propio** —código, protocolo, manifiesto minimizado y referencias—; y **colecciones de metadatos publicadas**, con las condiciones específicas descritas arriba. La recuperación legítima de una ficha por sí sola no determina su reutilización; en esta colección de 225 se documenta además la confirmación del responsable. Los PDFs, resúmenes y textos completos permanecen fuera del paquete. El permiso sobre esos metadatos no se extrapola a materiales ausentes ni a otras capturas futuras.
+Se distinguen tres capas: **captura y almacenamiento local** para verificar fuentes y cobertura; **publicación del trabajo propio** —código, protocolo, manifiesto minimizado y referencias—; y **colecciones de metadatos publicadas**, con las condiciones específicas descritas arriba. La recuperación legítima de una ficha por sí sola no determina su reutilización; en esta colección de 225 se documenta además la confirmación del responsable. La petición posterior del 20/10/2026 incorpora una capa separada de PDFs públicos y derivados; su declaración está en `data/fulltext/PERMISSIONS.json`. Se conservan las condiciones de cada obra y no se extrapola el permiso a otras capturas futuras.
 
 ## 2. Matriz obligatoria por fuente y operación
 
@@ -46,7 +46,7 @@ Los nombres, correos, firmas, expedientes y combinaciones de título/fecha puede
 Reglas de minimización del proyecto:
 
 - No extraer correos, firmas, DNI, teléfonos o direcciones personales para el dataset analítico.
-- Mantener texto original y claves de correspondencia fuera del repositorio público, con control de acceso. Los identificadores pseudónimos de supervisor solo se usan si son necesarios y legítimos para evitar fugas entre particiones.
+- Mantener respuestas brutas, claves de correspondencia y anotaciones privadas fuera del repositorio público, con control de acceso. Los originales públicos expresamente solicitados se distribuyen por separado en la release v0.2.0, con procedencia y derechos; no se mezclan con un dataset anonimizado. Los identificadores pseudónimos de supervisor solo se usan si son necesarios y legítimos para evitar fugas entre particiones.
 - Publicar análisis agregados y campos estrictamente necesarios. Títulos, URLs persistentes y fragmentos textuales pueden permitir reidentificación; revisar su necesidad por release y excluirlos si el riesgo no es proporcional.
 - Excluir o redactar datos sensibles y materiales de participantes de las tesis. No inferir salud, etnia, ideología o condiciones personales de los autores.
 - Evitar celdas públicas de menos de 10 trabajos cuando puedan señalar personas; considerar agrupación adicional y ataques por diferencia entre tablas. Este umbral es una salvaguarda de proyecto, no una garantía de anonimato.
@@ -67,7 +67,7 @@ Las solicitudes legítimas de corrección/retirada se registran con fecha, mater
 | Protocolo, manual, manifiesto minimizado y referencias | Publicables tras revisión de fuentes, necesidad de campos y privacidad |
 | Figuras propias | Publicables cuando existen datos y fundamento para la salida concreta; indicar denominadores y alcance |
 | Metadatos de nuevas fuentes | Documentar campos, operación, alcance y fundamento antes de incorporarlos; conservar la evidencia y los desconocidos |
-| Originales, PDFs, OCR y texto completo | Fuera del repositorio público salvo fundamento revisado que cubra la difusión concreta |
+| PDFs públicos y texto derivado de v0.2.0 | Paquetes de release solicitados por el responsable; declaración específica y condiciones por archivo. No hay OCR realizado |
 | Anotaciones/fragmentos | Revisar licencia y reidentificación; preferir códigos/localizadores mínimos |
 | Entrenamiento futuro sobre los 225 metadatos | Permiso confirmado por el responsable y registrado; tarea, particiones y evaluación todavía no ejecutadas |
 | Embeddings y pesos derivados | No existen en esta versión; cualquier publicación posterior documentará datos utilizados, evaluación y alcance |
@@ -78,6 +78,6 @@ La atribución registra institución, autor cuando sea necesario y admisible, t�
 
 Cada derivado tiene ficha propia: origen, permisos por ítem, idiomas, niveles, periodos, exclusiones, anotación, particiones, usos admitidos y límites. Un dataset de declaraciones no es un dataset de «uso real de IA»; una etiqueta sobre reproducibilidad no mide calidad global del estudiante.
 
-Se permite preparar la mecánica de entrenamiento con fixtures claramente separados; los resultados científicos usan trabajos reales. El responsable confirmó el permiso para investigación y eventual entrenamiento con los 225 metadatos publicados. Todavía deben definirse y registrarse tarea, campos, anotación y particiones; no se ha entrenado un modelo. Ese permiso se refiere a este snapshot y no incluye por extensión tesis, PDFs o resúmenes ausentes. Evaluar memorización, recuperación de fragmentos e información personal antes de publicar pesos o vectores. La síntesis de ejemplos a partir de datos protegidos también requiere revisión: «sintético» no garantiza ausencia de copia o reidentificación.
+Se permite preparar la mecánica de entrenamiento con fixtures claramente separados; los resultados científicos usan trabajos reales. El responsable confirmó el permiso para investigación y eventual entrenamiento con los 225 metadatos publicados. Todavía deben definirse y registrarse tarea, campos, anotación y particiones; no se ha entrenado un modelo. La nueva recopilación de PDFs se documenta separadamente por petición del responsable; no se deduce una licencia universal de entrenamiento para terceros. Evaluar memorización, recuperación de fragmentos e información personal antes de publicar pesos o vectores. La síntesis de ejemplos a partir de datos protegidos también requiere revisión: «sintético» no garantiza ausencia de copia o reidentificación.
 
 Seguir los principios [FAIR](https://www.nature.com/articles/sdata201618) significa documentar localización, acceso, interoperabilidad y reutilización; admite acceso restringido justificado. Documentar un recurso puede ser más apropiado que redistribuirlo. La apertura científica de Synesis se apoya en procedencia, código y decisiones auditables, además de los datos que legalmente puedan compartirse.

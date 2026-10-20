@@ -1,48 +1,50 @@
-# Reproducción y procedencia técnica
-
-## Operaciones y colecciones distintas
-
-| Operación | Red | Resultado |
-|---|---|---|
-| Validar la colección completa | No | 225 metadatos en `data/research_225/` → comprobación de esquema, unicidad, recuentos y hashes; informe `reports/research_225_validation.json` |
-| Reproducir el análisis piloto | No | Diez metadatos CC0 de `data/pilot/rights_cleared.jsonl` → señales, tablas, informes y manifiesto del pipeline |
-| Volver a consultar una fuente | Sí, respetando condiciones | Captura nueva, potencialmente distinta por migraciones, correcciones y orden del servidor |
-| Publicar colecciones | No se activa por consultar | Los 225 ya están autorizados por el responsable y se distribuyen con permiso y manifiesto propios; el piloto CC0 conserva su evidencia institucional |
+# Reproducir Synesis · v0.2.0
 
 ## Entorno
 
-Python 3.11+ para el paquete; prueba principal realizada con Python 3.12.14 y biblioteca estándar. Figuras exportadas con Matplotlib 3.9.4 y NumPy 2.0.2 (renderizador disponible Python 3.9 en el entorno de creación). Las versiones de las dependencias de figuras están fijadas en `pyproject.toml`. PNG/SVG/PDF pueden variar en metadatos binarios o fuentes entre sistemas, aunque sus tablas no cambien.
+Python 3.11 o posterior; CI usa3.12. Extracción fijada en pypdf 6.10.0, Parquet en PyArrow 26.0.0 y figuras en Matplotlib 3.9.4/NumPy 2.0.2. Instalar únicamente lo necesario:
 
-```bash
+```sh
+python3 -m venv .venv
+. .venv/bin/activate
+python3 -m pip install -e '.[corpus,parquet,figures]'
 make reproduce
-python3 -m pip install -e '.[figures]'
-make figures
 ```
 
-`make reproduce` ejecuta ambas comprobaciones: reconstruye el análisis del piloto de diez y valida por separado los 225 mediante `scripts/check_research_snapshot.py`, además de las pruebas. Las figuras analíticas siguen usando exclusivamente las tablas del piloto. Los diez se solapan con la colección completa; no se concatenan para contar 235 trabajos.
+`make reproduce` no consulta universidades: valida los 225 originales y sus hashes, reproduce el piloto histórico10, calcula señales de metadatos225 y cola sin etiquetas, valida el ledger de adquisición completo y ejecuta pruebas con fixtures sintéticos separados de los datos científicos. CI comprueba que los informes versionados no cambien. Los PDFs no se descargan en CI.
 
-Para verificar únicamente la carpeta completa:
+Sin `make`, ejecutar `python -m synesis.cli check`, `python scripts/check_research_snapshot.py`, `python scripts/prepare_research.py`, `python scripts/check_fulltext.py` y `python -m unittest discover -s tests -v` después de instalar el paquete.
 
-```bash
-python3 scripts/check_research_snapshot.py
+## Descargar y reconstruir
+
+```sh
+python scripts/download_release.py --tag v0.2.0 --pdfs
+python scripts/check_fulltext.py --require-files
+python scripts/build_corpus.py
+python scripts/export_parquet.py
+python scripts/render_collection.py
+python scripts/search_corpus.py 'inteligencia artificial' --limit 5
 ```
 
-El comprobador contrasta [`data/research_225/manifest.json`](../data/research_225/manifest.json), los archivos y la procedencia del permiso en [`PERMISSIONS.json`](../data/research_225/PERMISSIONS.json). La validación de integridad no se presenta como validación independiente del permiso declarado por el responsable. Los campos de licencias de origen permanecen intactos.
+El corpus se reconstruye en `data/derived/` con caché por SHA del PDF, versión de extractor y normalización. Cada página conserva localizador y hash; cada chunk conserva offsets Unicode `[inicio,fin)`, sin cruzar página u obra. Se reemplazan las salidas al finalizar, sin insertar duplicados en un índice previo. El resumen registra los hashes de entradas y salidas. La validación con `--require-files` verifica todos los archivos declarados; el modo predeterminado permite validar el ledger sin descargar los assets.
 
-En Windows sin `make`, usar los dos comandos Python del README y `python scripts/render_figures.py`, configurando `PYTHONPATH=src` según la terminal. Las pruebas usan fixtures marcados como tales; no entran en el corpus.
+JSONL conserva objetos completos; Parquet tiene columnas tipadas y `record_json` para el objeto completo. SQLite incluye metadatos, documentos, páginas, chunks y búsqueda FTS5 cuando está disponible. Si falta FTS5, el buscador informa de su modo literal alternativo.
 
-## Cosechador OAI
+`make figures` regenera tanto las figuras históricas del piloto 10 como las nuevas de cobertura 225. Las tablas numéricas y denominadores se mantienen separados. Los binarios de figuras pueden variar con fuentes y renderizadores; no se presentan como prueba de identidad del corpus.
 
-`synesis harvest` solo acepta una institución registrada con endpoint verificado, un set explícito y un contacto público real. Comprueba robots, respeta intervalos de consulta, limita 20 páginas por ejecución y no sigue tokens repetidos. Reintenta errores transitorios de manera acotada y registra cada página y su SHA-256. La salida debe estar bajo `data/harvests/`, en un directorio que aún no exista, ignorado por Git.
+## Volver a las universidades
 
-`--metadata-prefix dim` conserva calificadores de DSpace y es la opción para reproducir el mecanismo usado en UEV/UPV. `oai_dc` pierde calificadores de fechas; el conector conserva esa ambigüedad. Los filtros `from`/`until` se aplican a la modificación OAI, no a defensa. Un endpoint Identify verificado no garantiza que cualquier set o prefijo funcione: comprobar `ListSets` y `ListMetadataFormats` antes de ampliar.
+```sh
+python scripts/acquire_spain.py
+python scripts/acquire_global.py
+```
 
-No todos los comparadores tienen el mismo mecanismo: MIT/TU usan API de DSpace para campos cualificados; USP usa fichas HTML verificadas tras problemas de paginación; HKUST usa un listado oficial de departamento tras restricciones del portal. Las peticiones de origen y las reglas están documentadas en las fichas. Esta versión no promete un conector automático general para esos cuatro mecanismos.
+Las adquisiciones son operaciones con red, separadas de la reproducción offline. Revisan robots, identifican el proyecto, espacian solicitudes y preservan los estados de restricción; se reanudan mediante manifiestos por registro. Documentación: [España](ADQUISICION_ESPANA.md), [comparadores](ADQUISICION_GLOBAL.md). Las fichas pueden cambiar; reconstruir desde originales con hashes no equivale a recuperar otra vez bytes idénticos de una fuente dinámica.
 
-El piloto minimizado de diez permite repetir las transformaciones analíticas entregadas; la carpeta de 225 permite verificar la integridad de la colección completa publicada. No se atribuyen a los 225 las señales o figuras calculadas únicamente sobre diez. La captura original no se declara reproducible byte a byte desde Internet: las fuentes son dinámicas y los brutos contienen campos que no se redistribuyen.
+El cosechador OAI `synesis harvest` sigue disponible para nuevos snapshots bajo `data/harvests/` ignorado. Exige institución, set, contacto y límites explícitos. `--metadata-prefix dim` conserva calificadores de fecha; filtros OAI `from`/`until` se refieren a modificación, no a defensa. La muestra original225 permanece sin sobrescribir.
 
-## Verificación y revisión
+## Revisión y límites
 
-Las pruebas protegen contra inferir autoría de una coincidencia léxica, convertir desconocidos en negativos, aceptar duplicados o fechas imposibles y filtrar mal niveles de titulación. Los informes no excluyen silenciosamente filas inválidas: registran incidencias y la comprobación falla si las hay.
+Las pruebas protegen hashes, rutas, restricciones, duplicados, filtros, Unicode, offsets, citas y separación de obras; los fallos de extracción no se convierten en texto vacío supuesto. Estados `ocr_needed` o parciales se conservan; esta versión no ejecuta OCR ni inventa texto.
 
-La integración automática reproduce el piloto y valida la carpeta de 225 sin red ni claves, comprobando los resultados y la integridad de archivos versionados. No automatiza scraping periódico ni publicación de datos nuevos. Antes de ampliar las pruebas, debe existir un cambio o riesgo concreto que las justifique.
+M0 detecta menciones léxicas en título y materias; no acredita uso. Los225 siguen siendo una muestra de conveniencia, con fechas de repositorio heterogéneas. Para comparar antes/después se necesitan cobertura y fechas académicas verificadas, anotación humana y el [plan de análisis](PLAN_ANALISIS.md). No hay pesos entrenados, conclusiones causales ni un dataset supervisado de uso real de IA.

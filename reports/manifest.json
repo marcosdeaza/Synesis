@@ -1,5 +1,5 @@
 {
-  "release": "0.1.0",
+  "release": "0.2.0",
   "snapshot_date": "2026-10-16",
   "sampling": "convenience/source audit; NOT representative",
   "inputs": [
@@ -12,7 +12,7 @@
   "records_in": 10,
   "records_out": 10,
   "issue_count": 0,
-  "code_version": "0.1.0",
+  "code_version": "0.2.0",
   "analysis": "title + available subjects; abstracts not redistributed",
   "privacy": "No author/supervisor fields; source pages may identify authors.",
   "license": "Third-party metadata: per source; no blanket license or training permission."

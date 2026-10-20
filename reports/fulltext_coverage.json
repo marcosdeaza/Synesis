@@ -1,0 +1,798 @@
+{
+  "schema_version": "0.2.0",
+  "metadata_records": 225,
+  "attempted_records": 225,
+  "downloaded_records": 158,
+  "pdf_files": 225,
+  "pdf_bytes": 2409858880,
+  "statuses": {
+    "downloaded": 158,
+    "http_error": 1,
+    "invalid_pdf": 1,
+    "not_found": 1,
+    "restricted": 54,
+    "robots_disallowed": 10
+  },
+  "institutions": [
+    {
+      "institution_id": "hkust",
+      "metadata_records": 10,
+      "attempted_records": 10,
+      "downloaded_records": 0,
+      "pdf_files": 0,
+      "pdf_bytes": 0,
+      "statuses": {
+        "robots_disallowed": 10
+      }
+    },
+    {
+      "institution_id": "mit",
+      "metadata_records": 10,
+      "attempted_records": 10,
+      "downloaded_records": 10,
+      "pdf_files": 10,
+      "pdf_bytes": 85868092,
+      "statuses": {
+        "downloaded": 10
+      }
+    },
+    {
+      "institution_id": "tu_berlin",
+      "metadata_records": 10,
+      "attempted_records": 10,
+      "downloaded_records": 10,
+      "pdf_files": 10,
+      "pdf_bytes": 151379822,
+      "statuses": {
+        "downloaded": 10
+      }
+    },
+    {
+      "institution_id": "uev",
+      "metadata_records": 90,
+      "attempted_records": 90,
+      "downloaded_records": 86,
+      "pdf_files": 86,
+      "pdf_bytes": 192854906,
+      "statuses": {
+        "downloaded": 86,
+        "http_error": 1,
+        "invalid_pdf": 1,
+        "not_found": 1,
+        "restricted": 1
+      }
+    },
+    {
+      "institution_id": "upv",
+      "metadata_records": 100,
+      "attempted_records": 100,
+      "downloaded_records": 47,
+      "pdf_files": 114,
+      "pdf_bytes": 1963230060,
+      "statuses": {
+        "downloaded": 47,
+        "restricted": 53
+      }
+    },
+    {
+      "institution_id": "usp",
+      "metadata_records": 5,
+      "attempted_records": 5,
+      "downloaded_records": 5,
+      "pdf_files": 5,
+      "pdf_bytes": 16526000,
+      "statuses": {
+        "downloaded": 5
+      }
+    }
+  ],
+  "unattempted_record_ids": [],
+  "unavailable": [
+    {
+      "record_id": "synesis:hkust:0c1f642576481f66",
+      "institution_id": "hkust",
+      "status": "robots_disallowed",
+      "source_url": "https://sosc.hkust.edu.hk/research_n_facilities/master_theses#2025",
+      "notes": [
+        "robots_disallowed: robots.txt disallows this URL: https://repository.hkust.edu.hk/ir/",
+        "robots_disallowed: robots.txt disallows redirect destination: https://repository.hkust.edu.hk/ir/Search/Results?type=AllFields&filter%5B%5D=genre_facet%3A%22Thesis%22",
+        "robots_disallowed: robots.txt disallows this URL: https://julac-hkust.primo.exlibrisgroup.com/discovery/search?vid=852JULAC_HKUST%3AHKUST",
+        "Búsqueda individual por título en fuentes oficiales HKUST; no se sustituye la tesis por artículos relacionados.",
+        "robots_disallowed: robots.txt disallows this URL: https://repository.hkust.edu.hk/ir/bitstream/1783.1-152691/1/1783.1-152691.pdf"
+      ]
+    },
+    {
+      "record_id": "synesis:hkust:15978be832848fb8",
+      "institution_id": "hkust",
+      "status": "robots_disallowed",
+      "source_url": "https://sosc.hkust.edu.hk/research_n_facilities/master_theses#2019",
+      "notes": [
+        "robots_disallowed: robots.txt disallows this URL: https://repository.hkust.edu.hk/ir/",
+        "robots_disallowed: robots.txt disallows redirect destination: https://repository.hkust.edu.hk/ir/Search/Results?type=AllFields&filter%5B%5D=genre_facet%3A%22Thesis%22",
+        "robots_disallowed: robots.txt disallows this URL: https://julac-hkust.primo.exlibrisgroup.com/discovery/search?vid=852JULAC_HKUST%3AHKUST",
+        "Búsqueda individual por título en fuentes oficiales HKUST; no se sustituye la tesis por artículos relacionados.",
+        "No se identificó un enlace PDF público de esta tesis en las fuentes institucionales consultadas."
+      ]
+    },
+    {
+      "record_id": "synesis:hkust:175e500b197f12cb",
+      "institution_id": "hkust",
+      "status": "robots_disallowed",
+      "source_url": "https://sosc.hkust.edu.hk/research_n_facilities/master_theses#2019",
+      "notes": [
+        "robots_disallowed: robots.txt disallows this URL: https://repository.hkust.edu.hk/ir/",
+        "robots_disallowed: robots.txt disallows redirect destination: https://repository.hkust.edu.hk/ir/Search/Results?type=AllFields&filter%5B%5D=genre_facet%3A%22Thesis%22",
+        "robots_disallowed: robots.txt disallows this URL: https://julac-hkust.primo.exlibrisgroup.com/discovery/search?vid=852JULAC_HKUST%3AHKUST",
+        "Búsqueda individual por título en fuentes oficiales HKUST; no se sustituye la tesis por artículos relacionados.",
+        "No se identificó un enlace PDF público de esta tesis en las fuentes institucionales consultadas."
+      ]
+    },
+    {
+      "record_id": "synesis:hkust:37d1ffefc354dd42",
+      "institution_id": "hkust",
+      "status": "robots_disallowed",
+      "source_url": "https://sosc.hkust.edu.hk/research_n_facilities/master_theses#2025",
+      "notes": [
+        "robots_disallowed: robots.txt disallows this URL: https://repository.hkust.edu.hk/ir/",
+        "robots_disallowed: robots.txt disallows redirect destination: https://repository.hkust.edu.hk/ir/Search/Results?type=AllFields&filter%5B%5D=genre_facet%3A%22Thesis%22",
+        "robots_disallowed: robots.txt disallows this URL: https://julac-hkust.primo.exlibrisgroup.com/discovery/search?vid=852JULAC_HKUST%3AHKUST",
+        "Búsqueda individual por título en fuentes oficiales HKUST; no se sustituye la tesis por artículos relacionados.",
+        "robots_disallowed: robots.txt disallows this URL: https://repository.hkust.edu.hk/ir/bitstream/1783.1-152483/1/1783.1-152483.pdf"
+      ]
+    },
+    {
+      "record_id": "synesis:hkust:41be23a8d3161841",
+      "institution_id": "hkust",
+      "status": "robots_disallowed",
+      "source_url": "https://sosc.hkust.edu.hk/research_n_facilities/master_theses#2019",
+      "notes": [
+        "robots_disallowed: robots.txt disallows this URL: https://repository.hkust.edu.hk/ir/",
+        "robots_disallowed: robots.txt disallows redirect destination: https://repository.hkust.edu.hk/ir/Search/Results?type=AllFields&filter%5B%5D=genre_facet%3A%22Thesis%22",
+        "robots_disallowed: robots.txt disallows this URL: https://julac-hkust.primo.exlibrisgroup.com/discovery/search?vid=852JULAC_HKUST%3AHKUST",
+        "Búsqueda individual por título en fuentes oficiales HKUST; no se sustituye la tesis por artículos relacionados.",
+        "No se identificó un enlace PDF público de esta tesis en las fuentes institucionales consultadas."
+      ]
+    },
+    {
+      "record_id": "synesis:hkust:757cc9c24da27a4e",
+      "institution_id": "hkust",
+      "status": "robots_disallowed",
+      "source_url": "https://sosc.hkust.edu.hk/research_n_facilities/master_theses#2019",
+      "notes": [
+        "robots_disallowed: robots.txt disallows this URL: https://repository.hkust.edu.hk/ir/",
+        "robots_disallowed: robots.txt disallows redirect destination: https://repository.hkust.edu.hk/ir/Search/Results?type=AllFields&filter%5B%5D=genre_facet%3A%22Thesis%22",
+        "robots_disallowed: robots.txt disallows this URL: https://julac-hkust.primo.exlibrisgroup.com/discovery/search?vid=852JULAC_HKUST%3AHKUST",
+        "Búsqueda individual por título en fuentes oficiales HKUST; no se sustituye la tesis por artículos relacionados.",
+        "robots_disallowed: robots.txt disallows this URL: https://repository.hkust.edu.hk/ir/bitstream/1783.1-122003/1/991012770769703412.pdf"
+      ]
+    },
+    {
+      "record_id": "synesis:hkust:90343bdae8880ec3",
+      "institution_id": "hkust",
+      "status": "robots_disallowed",
+      "source_url": "https://sosc.hkust.edu.hk/research_n_facilities/master_theses#2025",
+      "notes": [
+        "robots_disallowed: robots.txt disallows this URL: https://repository.hkust.edu.hk/ir/",
+        "robots_disallowed: robots.txt disallows redirect destination: https://repository.hkust.edu.hk/ir/Search/Results?type=AllFields&filter%5B%5D=genre_facet%3A%22Thesis%22",
+        "robots_disallowed: robots.txt disallows this URL: https://julac-hkust.primo.exlibrisgroup.com/discovery/search?vid=852JULAC_HKUST%3AHKUST",
+        "Búsqueda individual por título en fuentes oficiales HKUST; no se sustituye la tesis por artículos relacionados.",
+        "DOI institucional localizado: https://doi.org/10.14711/thesis-hdl167723",
+        "robots_disallowed: robots.txt disallows redirect destination: https://repository.hkust.edu.hk/ir/Record/1783.1-167723",
+        "No se identificó un enlace PDF público de esta tesis en las fuentes institucionales consultadas."
+      ]
+    },
+    {
+      "record_id": "synesis:hkust:acf38ac3f05067da",
+      "institution_id": "hkust",
+      "status": "robots_disallowed",
+      "source_url": "https://sosc.hkust.edu.hk/research_n_facilities/master_theses#2025",
+      "notes": [
+        "robots_disallowed: robots.txt disallows this URL: https://repository.hkust.edu.hk/ir/",
+        "robots_disallowed: robots.txt disallows redirect destination: https://repository.hkust.edu.hk/ir/Search/Results?type=AllFields&filter%5B%5D=genre_facet%3A%22Thesis%22",
+        "robots_disallowed: robots.txt disallows this URL: https://julac-hkust.primo.exlibrisgroup.com/discovery/search?vid=852JULAC_HKUST%3AHKUST",
+        "Búsqueda individual por título en fuentes oficiales HKUST; no se sustituye la tesis por artículos relacionados.",
+        "DOI institucional localizado: https://doi.org/10.14711/thesis-hdl152458",
+        "robots_disallowed: robots.txt disallows redirect destination: https://repository.hkust.edu.hk/ir/Record/1783.1-152458",
+        "No se identificó un enlace PDF público de esta tesis en las fuentes institucionales consultadas."
+      ]
+    },
+    {
+      "record_id": "synesis:hkust:bfa9b489208216a5",
+      "institution_id": "hkust",
+      "status": "robots_disallowed",
+      "source_url": "https://sosc.hkust.edu.hk/research_n_facilities/master_theses#2019",
+      "notes": [
+        "robots_disallowed: robots.txt disallows this URL: https://repository.hkust.edu.hk/ir/",
+        "robots_disallowed: robots.txt disallows redirect destination: https://repository.hkust.edu.hk/ir/Search/Results?type=AllFields&filter%5B%5D=genre_facet%3A%22Thesis%22",
+        "robots_disallowed: robots.txt disallows this URL: https://julac-hkust.primo.exlibrisgroup.com/discovery/search?vid=852JULAC_HKUST%3AHKUST",
+        "Búsqueda individual por título en fuentes oficiales HKUST; no se sustituye la tesis por artículos relacionados.",
+        "No se identificó un enlace PDF público de esta tesis en las fuentes institucionales consultadas."
+      ]
+    },
+    {
+      "record_id": "synesis:hkust:ddfef707718d2e17",
+      "institution_id": "hkust",
+      "status": "robots_disallowed",
+      "source_url": "https://sosc.hkust.edu.hk/research_n_facilities/master_theses#2025",
+      "notes": [
+        "robots_disallowed: robots.txt disallows this URL: https://repository.hkust.edu.hk/ir/",
+        "robots_disallowed: robots.txt disallows redirect destination: https://repository.hkust.edu.hk/ir/Search/Results?type=AllFields&filter%5B%5D=genre_facet%3A%22Thesis%22",
+        "robots_disallowed: robots.txt disallows this URL: https://julac-hkust.primo.exlibrisgroup.com/discovery/search?vid=852JULAC_HKUST%3AHKUST",
+        "Búsqueda individual por título en fuentes oficiales HKUST; no se sustituye la tesis por artículos relacionados.",
+        "robots_disallowed: robots.txt disallows this URL: https://repository.hkust.edu.hk/ir/bitstream/1783.1-152513/1/1783.1-152513.pdf"
+      ]
+    },
+    {
+      "record_id": "uev-20.500.12880-1491",
+      "institution_id": "uev",
+      "status": "not_found",
+      "source_url": "https://titula.universidadeuropea.es/handle/20.500.12880/1491",
+      "notes": [
+        "Initial item GET failed: HTTPError: HTTP Error 404: 404",
+        "Official item alternative failed: HTTPError: HTTP Error 404: 404"
+      ]
+    },
+    {
+      "record_id": "uev-20.500.12880-3524",
+      "institution_id": "uev",
+      "status": "invalid_pdf",
+      "source_url": "https://titula.universidadeuropea.es/handle/20.500.12880/3524",
+      "notes": [
+        "Public item page: 1 PDF candidate(s), 0 ZIP candidate(s), 0 request-a-copy link(s).",
+        "Initial PDF URL failed: https://titula.universidadeuropea.es/bitstream/handle/20.500.12880/3524/TFM_YAILIMENESESTORRES.pdf?sequence=1&isAllowed=y: InvalidPDF: The response is not a PDF; HTML/error responses are not saved as PDFs; trying its published citation alias.",
+        "PDF candidate failed: https://titula.universidadeuropea.es/bitstream/handle/20.500.12880/3524/TFM_YAILIMENESESTORRES.pdf?sequence=1&isAllowed=y: InvalidPDF: The response is not a PDF; HTML/error responses are not saved as PDFs"
+      ]
+    },
+    {
+      "record_id": "uev-20.500.12880-4071",
+      "institution_id": "uev",
+      "status": "restricted",
+      "source_url": "https://titula.universidadeuropea.es/handle/20.500.12880/4071",
+      "notes": [
+        "Current item page explicitly declares restrictedAccess; technical download URLs were not requested."
+      ]
+    },
+    {
+      "record_id": "uev-20.500.12880-5197",
+      "institution_id": "uev",
+      "status": "http_error",
+      "source_url": "https://titula.universidadeuropea.es/handle/20.500.12880/5197",
+      "notes": [
+        "Public item page: 1 PDF candidate(s), 0 ZIP candidate(s), 0 request-a-copy link(s).",
+        "Initial PDF URL failed: https://titula.universidadeuropea.es/bitstream/handle/20.500.12880/5197/TFG_Carolina%20Rios%20Torres.pdf?sequence=1&isAllowed=y: HTTPError: HTTP Error 500: 500; trying its published citation alias.",
+        "PDF candidate failed: https://titula.universidadeuropea.es/bitstream/handle/20.500.12880/5197/TFG_Carolina%20Rios%20Torres.pdf?sequence=1&isAllowed=y: HTTPError: HTTP Error 500: 500"
+      ]
+    },
+    {
+      "record_id": "upv-10251-110437",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/110437",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 1 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-114117",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/114117",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 2 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-11533",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/11533",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 1 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-144776",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/144776",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 1 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-149788",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/149788",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 1 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-150951",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/150951",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 1 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-158321",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/158321",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 1 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-15976",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/15976",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 1 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-16597",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/16597",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 1 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-171575",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/171575",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 1 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-173515",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/173515",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 1 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-17710",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/17710",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 5 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-18413",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/18413",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 1 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-187237",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/187237",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 1 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-189297",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/189297",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 1 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-190648",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/190648",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 4 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-196552",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/196552",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 1 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-197237",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/197237",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 1 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-205201",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/205201",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 1 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-208170",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/208170",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 1 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-208186",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/208186",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 1 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-209295",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/209295",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 2 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-209419",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/209419",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 1 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-210424",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/210424",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 1 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-212546",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/212546",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 1 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-219667",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/219667",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 2 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-224083",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/224083",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 1 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-227270",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/227270",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 1 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-228850",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/228850",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 1 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-230898",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/230898",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 1 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-240679",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/240679",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 1 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-29180",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/29180",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 1 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-32205",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/32205",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 1 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-32547",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/32547",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 1 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-33606",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/33606",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 1 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-34856",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/34856",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 2 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-35443",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/35443",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 2 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-35448",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/35448",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 1 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-36943",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/36943",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 1 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-44096",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/44096",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 2 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-46719",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/46719",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 1 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-46955",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/46955",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 1 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-47257",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/47257",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 2 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-48032",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/48032",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 2 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-48765",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/48765",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 1 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-53716",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/53716",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 1 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-55933",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/55933",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 2 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-56219",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/56219",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 1 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-56998",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/56998",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 1 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-68974",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/68974",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 1 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-91225",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/91225",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 2 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-92666",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/92666",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 1 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    },
+    {
+      "record_id": "upv-10251-97866",
+      "institution_id": "upv",
+      "status": "restricted",
+      "source_url": "https://riunet.upv.es/handle/10251/97866",
+      "notes": [
+        "Public item page: 0 PDF candidate(s), 0 ZIP candidate(s), 1 request-a-copy link(s).",
+        "Request-a-copy files were excluded; no copy request was sent."
+      ]
+    }
+  ],
+  "interpretation": "Acquisition coverage, not AI adoption or a representative academic sample."
+}

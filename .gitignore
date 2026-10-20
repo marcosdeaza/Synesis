@@ -10,3 +10,8 @@ data/private/
 dist/
 *.log
 .cache/
+data/fulltext/pdf/
+data/derived/
+*.part
+release/
+/work/

@@ -1,5 +1,7 @@
 # Auditoría internacional de fuentes de Synesis
 
+> Auditoría histórica del 16/10. La adquisición posterior de PDFs y sus resultados se documentan en [ADQUISICION_ESPANA.md](ADQUISICION_ESPANA.md), [ADQUISICION_GLOBAL.md](ADQUISICION_GLOBAL.md) y los manifiestos de v0.2.0.
+
 Consulta: **16 de octubre de 2026**. Esta auditoría identifica cuatro comparadores y aporta **35 registros bibliográficos reales**, publicados en [`data/research_225/global.jsonl`](../data/research_225/global.jsonl). La muestra prueba extracción, trazabilidad y diferencias entre fuentes. Es intencional y pequeña: sus proporciones **no estiman producción universitaria, prevalencia de IA ni efectos causales**. Se conservaron títulos, fechas, materias y evidencia de grado; no se descargaron PDF ni se publicaron autores, correos o resúmenes.
 
 La colección completa de 225, incluidos estos 35, se publica por solicitud del responsable, quien confirmó que cuenta con permiso para publicación y uso investigacional o entrenamiento posterior de esos metadatos. [`PERMISSIONS.json`](../data/research_225/PERMISSIONS.json) registra la declaración y su origen sin presentarla como validación independiente o autorización institucional verificada. Las licencias observadas de cada fuente se preservan. El piloto CC0 automatizado contiene por separado diez registros de TU Berlin, ya incluidos entre los 225.

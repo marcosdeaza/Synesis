@@ -4,9 +4,9 @@ title: "Synesis: TFG y TFM durante la transición de la IA generativa"
 authors:
   - name: "Synesis contributors"
 type: software
-version: 0.1.0
-date-released: 2026-10-16
-abstract: "Research protocol, source audit and reproducible metadata pilot. Initial AI-assisted draft; not a completed causal study."
+version: 0.2.0
+date-released: 2026-10-20
+abstract: "Research protocol, 225-work metadata snapshot, institutional PDF acquisition ledger and reusable page/chunk retrieval corpus. AI-assisted software and documentation; no causal estimates or validated AI-use labels."
 license: MIT
 keywords:
   - university theses

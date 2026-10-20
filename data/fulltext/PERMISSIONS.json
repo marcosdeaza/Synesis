@@ -1,0 +1,21 @@
+{
+  "schema_version": "0.2.0",
+  "recorded_at": "2026-10-20",
+  "status": "fulltext_collection_requested_by_project_owner",
+  "declaration_source": "Direct instructions from the project owner in the Synesis working conversation, following the earlier statement that research and eventual training are permitted",
+  "declaration": "Completar Synesis con los PDFs disponibles y datasets reutilizables para otros proyectos, en el repositorio público ya autorizado.",
+  "operations": {
+    "public_pdf_acquisition_and_reusable_corpus_packaging": "requested_by_project_owner",
+    "actual_model_training": "not_performed"
+  },
+  "scope": {
+    "metadata_records_examined": 225,
+    "materials": "Publicly accessible original PDFs and PDF annexes from institutional sources, plus page/chunk extraction and retrieval derivatives",
+    "excluded": "Restricted copies, request-a-copy workflows, login-only resources and URLs explicitly disallowed by robots.txt"
+  },
+  "independently_verified_institutional_permission": false,
+  "institutional_permission_documents_in_repository": false,
+  "licensing": "Preserve source_license and evidence per file. This owner request creates no new blanket CC0, MIT, commercial-use or training license for third parties. Original PDFs may identify authors and contain other personal information.",
+  "provenance": "sources_spain.jsonl and sources_global.jsonl",
+  "training_performed": false
+}

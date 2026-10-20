@@ -1,4 +1,4 @@
-# Ficha de las colecciones públicas · v0.1.0
+# Ficha de las colecciones públicas · snapshot v0.1 / paquete v0.2.0
 
 ## Motivación y composición
 
@@ -44,13 +44,13 @@ Los hashes de los archivos completos están en [`data/research_225/manifest.json
 | `evidence_kind` | texto | `metadata` en este piloto |
 | `campus`, `campus_evidence_url` | texto/nulo | Solo con prueba explícita; todos desconocidos en este piloto |
 
-Los campos derivados de `reports/features.jsonl` corresponden al piloto de diez e incluyen indicadores léxicos, longitud de metadatos, resumen efectivamente analizado, fingerprint de título, periodo descriptivo y `ai_use_status=not_assessed`. `period` agrupa año de metadatos hasta 2021, 2022–2023 y desde 2024; es una auditoría operativa, distinta de la ventana académica candidata 2018–2021 frente a 2023–2025 del protocolo. No se usa para estimar efectos. No se presentan esos derivados como si ya se hubieran recalculado para los 225.
+Los campos derivados de `reports/features.jsonl` corresponden al piloto de diez e incluyen indicadores léxicos, longitud de metadatos, resumen efectivamente analizado, fingerprint de título, periodo descriptivo y `ai_use_status=not_assessed`. `period` agrupa año de metadatos hasta 2021, 2022–2023 y desde 2024; es una auditoría operativa, distinta de la ventana académica candidata 2018–2021 frente a 2023–2025 del protocolo. No se usa para estimar efectos. Desde v0.2.0, `reports/research_features.jsonl` y `research_summary.json` recalculan M0 sobre los 225 metadatos, separadamente del piloto histórico. La cola de anotación de 225 mantiene vacías todas las etiquetas humanas.
 
 ## Uso previsto y límites
 
 Uso actual: consulta y validación automática de los 225 metadatos publicados, más reproducción analítica sobre el piloto CC0 de diez. La colección completa queda disponible según la autorización declarada por el responsable, con el alcance registrado en `PERMISSIONS.json`. La publicación no constituye una licencia abierta universal, una certificación de idoneidad para cualquier entrenamiento ni evidencia de representatividad o anonimato. El entrenamiento futuro deberá identificar tarea, campos, condiciones y particiones; no se ha realizado en esta versión.
 
-No se distribuyen PDFs, texto completo, resúmenes, campos de autores/directores/correos o etiquetas humanas finalizadas. Los títulos y enlaces pueden permitir identificar a las personas en la fuente; el corpus está minimizado, no anonimizado de forma irreversible.
+Los JSONL originales de metadatos no contienen PDFs, texto completo, resúmenes ni campos de autores/directores/correos. Desde v0.2.0 hay una capa separada de PDFs y derivados, descrita en [FULLTEXT_DATASET_CARD.md](FULLTEXT_DATASET_CARD.md); no modifica estos JSONL congelados. No hay etiquetas humanas finalizadas. Los títulos y enlaces pueden permitir identificar a las personas en la fuente; el corpus está minimizado, no anonimizado de forma irreversible.
 
 No usar para clasificar autoría IA, integridad, plagio, rendimiento individual o calidad de universidades. Una mención, una declaración, una fecha y un resultado de un detector no son intercambiables. Los sesgos de selección y medición no se arreglan con un intervalo de confianza.
 

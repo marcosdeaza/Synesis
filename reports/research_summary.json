@@ -1,0 +1,174 @@
+{
+  "total_records": 225,
+  "eligible_records": 225,
+  "unknown_degree": 0,
+  "institutions": [
+    {
+      "institution_id": "hkust",
+      "records": 10,
+      "eligible": 10,
+      "abstracts": 0,
+      "abstracts_analyzed": 0,
+      "cue_mentions": 0,
+      "min_year": 2019,
+      "max_year": 2025
+    },
+    {
+      "institution_id": "mit",
+      "records": 10,
+      "eligible": 10,
+      "abstracts": 10,
+      "abstracts_analyzed": 0,
+      "cue_mentions": 1,
+      "min_year": 2019,
+      "max_year": 2024
+    },
+    {
+      "institution_id": "tu_berlin",
+      "records": 10,
+      "eligible": 10,
+      "abstracts": 10,
+      "abstracts_analyzed": 0,
+      "cue_mentions": 0,
+      "min_year": 2021,
+      "max_year": 2026
+    },
+    {
+      "institution_id": "uev",
+      "records": 90,
+      "eligible": 90,
+      "abstracts": 90,
+      "abstracts_analyzed": 0,
+      "cue_mentions": 0,
+      "min_year": 2022,
+      "max_year": 2025
+    },
+    {
+      "institution_id": "upv",
+      "records": 100,
+      "eligible": 100,
+      "abstracts": 95,
+      "abstracts_analyzed": 0,
+      "cue_mentions": 0,
+      "min_year": 2011,
+      "max_year": 2026
+    },
+    {
+      "institution_id": "usp",
+      "records": 5,
+      "eligible": 5,
+      "abstracts": 5,
+      "abstracts_analyzed": 0,
+      "cue_mentions": 0,
+      "min_year": 2019,
+      "max_year": 2024
+    }
+  ],
+  "cells": [
+    {
+      "institution_id": "hkust",
+      "period": "post_2024",
+      "n": 5,
+      "mentions": 0
+    },
+    {
+      "institution_id": "hkust",
+      "period": "pre_2022",
+      "n": 5,
+      "mentions": 0
+    },
+    {
+      "institution_id": "mit",
+      "period": "post_2024",
+      "n": 5,
+      "mentions": 1
+    },
+    {
+      "institution_id": "mit",
+      "period": "pre_2022",
+      "n": 5,
+      "mentions": 0
+    },
+    {
+      "institution_id": "tu_berlin",
+      "period": "post_2024",
+      "n": 6,
+      "mentions": 0
+    },
+    {
+      "institution_id": "tu_berlin",
+      "period": "pre_2022",
+      "n": 1,
+      "mentions": 0
+    },
+    {
+      "institution_id": "tu_berlin",
+      "period": "transition_2022_2023",
+      "n": 3,
+      "mentions": 0
+    },
+    {
+      "institution_id": "uev",
+      "period": "post_2024",
+      "n": 43,
+      "mentions": 0
+    },
+    {
+      "institution_id": "uev",
+      "period": "transition_2022_2023",
+      "n": 45,
+      "mentions": 0
+    },
+    {
+      "institution_id": "uev",
+      "period": "undated",
+      "n": 2,
+      "mentions": 0
+    },
+    {
+      "institution_id": "upv",
+      "period": "post_2024",
+      "n": 17,
+      "mentions": 0
+    },
+    {
+      "institution_id": "upv",
+      "period": "pre_2022",
+      "n": 69,
+      "mentions": 0
+    },
+    {
+      "institution_id": "upv",
+      "period": "transition_2022_2023",
+      "n": 14,
+      "mentions": 0
+    },
+    {
+      "institution_id": "usp",
+      "period": "post_2024",
+      "n": 2,
+      "mentions": 0
+    },
+    {
+      "institution_id": "usp",
+      "period": "pre_2022",
+      "n": 2,
+      "mentions": 0
+    },
+    {
+      "institution_id": "usp",
+      "period": "transition_2022_2023",
+      "n": 1,
+      "mentions": 0
+    }
+  ],
+  "period_counts": {
+    "pre_2022": 82,
+    "post_2024": 78,
+    "transition_2022_2023": 63,
+    "undated": 2
+  },
+  "claim": "Convenience pilot of metadata. No population prevalence, AI authorship or causal effects estimated.",
+  "scope": "All 225 metadata records; title and subjects only; lexical cues do not establish AI use.",
+  "human_labels": 0
+}

@@ -53,3 +53,45 @@ En la entrega local anterior a la publicación, la carpeta estaba inicializada s
 - Las restricciones iniciales de distribución a solo diez corresponden a la entrega histórica anterior. La decisión posterior del responsable amplía el alcance publicado a 225 mediante una autorización documentada distinta de CC0.
 - Publicación completada en el commit `21d4955`. GitHub verificó los 225 registros, las 20 pruebas existentes y la reproducción del piloto sin diferencias: [ejecución correcta](https://github.com/marcosdeaza/Synesis/actions/runs/38866772837). Se descargaron los dos archivos desde la API de GitHub y sus hashes y recuentos coinciden con los originales.
 - Siguiente paso: definir el experimento que vaya a usar estos metadatos; no se ha iniciado entrenamiento en esta petición.
+
+
+## Fase v0.2 · recopilación y reutilización · 20 de octubre de 2026
+
+El investigador pide terminar Synesis como paquete muy reutilizable, incluyendo PDFs, más datasets y mecanismos para proyectos. La petición amplía explícitamente el trabajo a texto completo y recopilación de documentos, manteniendo la procedencia y las condiciones de cada fuente. Los snapshots `research_225` siguen congelados e idénticos; la capa nueva está en `data/fulltext/` y sus derivados en `data/derived/`.
+
+La carpeta de trabajo anterior ya no estaba presente en el equipo. Se recuperó el repositorio público desde GitHub; los 225 registros sí estaban publicados y se restauraron íntegros. La identidad Git se configuró solo para este repositorio con el perfil y noreply verificados.
+
+Trabajo en paralelo:
+- España: revisar los 190 registros UEV/UPV, recuperar PDF principal y anexos públicos y registrar restricciones reales sin eludir accesos.
+- Internacional: revisar los 35 comparadores, resolver especialmente los títulos HKUST a registros/PID y recuperar documentos institucionales disponibles.
+- Corpus: extracción readonly por página, fragmentos con offsets y hashes, catálogo de 225, SQLite/FTS y CLI de búsqueda, con caché y errores explícitos.
+- Integración: cliente HTTP común con robots/demoras/redirecciones, validación, documentación, paquetes de descarga y publicación versionada.
+
+Criterio de entrega: cada uno de los 225 debe tener un estado documentado; los documentos obtenidos deben validarse por firma, hash y parser. Un acceso cerrado o un enlace no encontrado no se presenta como PDF recuperado. Los PDFs originales y los derivados voluminosos se distribuirán en paquetes versionados, fuera del historial Git del código; los manifiestos permiten reconstruir y comprobar el corpus. No se inventan declaraciones de uso de IA, no se han entrenado pesos y no se afirma causalidad.
+
+Siguiente paso en curso: adquisición completa, integración del corpus y comprobación de cobertura/calidad antes de empaquetar. Actualizar esta sección con cifras medidas y enlaces de entrega al cerrar.
+
+
+## Cierre de la v0.2.0 · 20 de octubre de 2026
+
+La sesión anterior se interrumpió por límite de uso con España a medias (137 de 190). Se reanudó con `scripts/acquire_spain.py` (reanudable por registro) hasta completar los 190; `scripts/acquire_global.py` ya había cerrado los 35 comparadores.
+
+Cifras medidas (fuente: `reports/fulltext_coverage.json` y `reports/corpus_summary.json`):
+
+| Institución | Registros | Con PDF | Otros estados |
+|---|---:|---:|---|
+| UEV | 90 | 86 | 1 restringido, 1 PDF inválido, 1 no encontrado, 1 error HTTP |
+| UPV | 100 | 47 (114 archivos con anexos) | 53 restringidos en origen |
+| MIT | 10 | 10 | |
+| TU Berlin | 10 | 10 | |
+| USP | 5 | 5 | |
+| HKUST | 10 | 0 | 10 `robots_disallowed` |
+| **Total** | **225** | **158** | 225 archivos, 2.409.858.880 bytes |
+
+Corpus: 13.558 páginas, 20.204 chunks (1800 caracteres, solape 200), 22.231.767 caracteres; 153 documentos con texto, 40 con texto parcial y 32 `ocr_needed` (no se ejecutó OCR). Cero incidencias de extracción. Búsqueda FTS5 con cita de página comprobada con consultas reales. 54 pruebas de software correctas (se cerraron conexiones SQLite en `tests/test_corpus.py`).
+
+Paquetes de la release v0.2.0: metadatos, corpus (JSONL, SQLite FTS5, Parquet), PDFs por institución en partes de unos 250 MiB (UPV en 10), `SHA256SUMS` y `synesis-release-manifest.json`. Se verificó `shasum -c` local antes de publicar. Los derivados y PDFs no están en el historial Git (`data/derived/`, `data/fulltext/pdf/`, `release/`, `work/` ignorados).
+
+Observación para quien reutilice: muchos trabajos UEV llevan licencia CC BY-NC-ND y otros tienen derechos reservados o licencia desconocida; la licencia queda por archivo en `data/fulltext/sources_*.jsonl`. La declaración del responsable (`data/fulltext/PERMISSIONS.json`) no la sustituye.
+
+Pendientes: OCR de los 32 documentos escaneados (decidir motor y registrar versión), reintentar los 53 UPV restringidos solo si el repositorio cambia su política, HKUST solo con autorización explícita o API permitida, auditoría de fechas académicas, anotación humana usando `reports/annotation_queue.csv`, y prerregistro antes de cualquier análisis confirmatorio. No se han entrenado modelos ni se han creado etiquetas de uso de IA.

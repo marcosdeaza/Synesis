@@ -1,12 +1,12 @@
 # Anotación humana y evidencia
 
-La tabla `config/annotations_template.csv` está vacía deliberadamente: aún no hay anotación humana ni verdad de referencia. No se sustituyen esos datos por etiquetas generadas.
+La cola `reports/annotation_queue.csv` contiene los 225 identificadores y contexto con columnas de etiquetas vacías; `config/annotations_template.csv` conserva el formulario vacío: aún no hay anotación humana ni verdad de referencia. No se sustituyen esos datos por etiquetas generadas.
 
 ## Variables y valores
 
 | Campo | Regla |
 |---|---|
-| `record_id` | Identificador real existente en `data/pilot/`; una tesis por unidad |
+| `record_id` | Identificador real existente en `data/research_225/`; una tesis por unidad |
 | `annotator_id` | Seudónimo interno estable, sin nombre ni email |
 | `topic_ai` | `yes`, `no`, `uncertain`; el tema aborda IA generativa, no simplemente tecnología |
 | `declared_use_status` | `explicit_use`, `explicit_nonuse`, `unclear`, `not_observed`, `not_accessible` |
@@ -20,6 +20,6 @@ La tabla `config/annotations_template.csv` está vacía deliberadamente: aún no
 
 Dos personas anotan independientemente el mismo subconjunto estratificado por idioma, nivel, institución y periodo, tras un ejercicio de calibración separado de evaluación. Medir acuerdo observado, matrices de confusión y kappa por variable; documentar la prevalencia y los casos inciertos. Resolver discrepancias con una tercera lectura registrada, preservando las dos etiquetas originales y la adjudicación.
 
-Para ampliar al texto completo, cerrar antes los permisos de acceso y minería. Mantener las citas breves o notas de evidencia en almacenamiento restringido cuando corresponda. No publicar información sensible, nombres o evaluaciones individuales.
+La capa de texto completo de v0.2.0 documenta el acceso y la declaración del responsable en `data/fulltext/PERMISSIONS.json`; conservar las condiciones de cada obra en la anotación. Mantener las citas breves o notas de evidencia en almacenamiento restringido cuando corresponda. No publicar información sensible, nombres o evaluaciones individuales.
 
 El plan de análisis define los mínimos y la política para desconocidos; ningún script debe convertir cadenas vacías en `no` ni fusionar `not_accessible` con `not_observed`.

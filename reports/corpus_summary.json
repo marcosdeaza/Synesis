@@ -1,0 +1,101 @@
+{
+  "ai_use_labels_created": false,
+  "cache_hits": 0,
+  "cache_misses": 225,
+  "catalog_status_counts": {
+    "not_downloaded": 67,
+    "partial_text": 40,
+    "text_extracted": 118
+  },
+  "character_count": 22231767,
+  "chunk_count": 20204,
+  "chunk_max_chars": 1800,
+  "chunk_overlap": 200,
+  "document_count": 225,
+  "document_status_counts": {
+    "ocr_needed": 32,
+    "partial_text": 40,
+    "text_extracted": 153
+  },
+  "extraction_version": "page-nfc-v1",
+  "extractor": "pypdf",
+  "extractor_version": "6.19.0",
+  "fts5_available": true,
+  "issue_counts": {},
+  "metadata_inputs": [
+    {
+      "bytes": 254709,
+      "path": "data/research_225/spain.jsonl",
+      "records": 190,
+      "sha256": "5bc4144042aba1ad1716bbfeadfa0e223d2bb448787da7872fb2fc7aaf9b0ce2"
+    },
+    {
+      "bytes": 39812,
+      "path": "data/research_225/global.jsonl",
+      "records": 35,
+      "sha256": "0e8554febcdc0eea5a636c87baed65ebe0b07392edddcf0676c82518e66c40c3"
+    }
+  ],
+  "metadata_records": 225,
+  "offsets": "Unicode code points in normalized page text; zero-based [start,end)",
+  "outputs": [
+    {
+      "bytes": 344373,
+      "path": "catalog.jsonl",
+      "sha256": "afbd077cf9c8115915be166e88bf6a47b0c21811fb5b113ce1504b892f04f805"
+    },
+    {
+      "bytes": 211138,
+      "path": "documents.jsonl",
+      "sha256": "fbff53824418bb186ef54923599d1b90e37e8a88b4d3e67c803f22aac002b230"
+    },
+    {
+      "bytes": 35444212,
+      "path": "pages.jsonl",
+      "sha256": "94418b85c0af4d6f6441654489428afae4efc253284df1ead699d38799a23e7d"
+    },
+    {
+      "bytes": 45676494,
+      "path": "chunks.jsonl",
+      "sha256": "165bb5c2d44160d30167a71a3ae9443e3ede6c32a293223e4455e6903ba4f4d5"
+    },
+    {
+      "bytes": 170274816,
+      "path": "corpus.sqlite",
+      "sha256": "53aba425900db48454db653afd340f769e01d6358970e684d538ca81fb245eb6"
+    }
+  ],
+  "page_count": 13558,
+  "page_status_counts": {
+    "ocr_needed": 343,
+    "text_extracted": 13215
+  },
+  "pilot_records_added": 0,
+  "records_with_source_manifest": 225,
+  "records_with_text": 158,
+  "records_with_verified_pdf": 158,
+  "schema_version": "0.2.0",
+  "source_manifests": [
+    {
+      "bytes": 200423,
+      "path": "data/fulltext/sources_spain.jsonl",
+      "records": 190,
+      "sha256": "373e07761d8ac9143b2391948a5803cb4a2bbab3d9df13b76af4c082710b1079"
+    },
+    {
+      "bytes": 70517,
+      "path": "data/fulltext/sources_global.jsonl",
+      "records": 35,
+      "sha256": "68b92bef532be5b72876633be54f2c46bd022eaf7454dfcb00ec8902371ee2ae"
+    }
+  ],
+  "source_status_counts": {
+    "downloaded": 158,
+    "http_error": 1,
+    "invalid_pdf": 1,
+    "not_found": 1,
+    "restricted": 54,
+    "robots_disallowed": 10
+  },
+  "training_performed": false
+}

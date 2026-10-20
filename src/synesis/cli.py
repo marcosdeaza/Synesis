@@ -25,11 +25,11 @@ def build(root: Path) -> dict:
     for r in rows:
         if r["institution_id"] not in known:
             issues.append({"id": r["id"], "issues": ["institution_not_in_registry"]})
-    manifest = {"release": "0.1.0", "snapshot_date": "2026-10-16", "sampling": "convenience/source audit; NOT representative",
+    manifest = {"release": "0.2.0", "snapshot_date": "2026-10-16", "sampling": "convenience/source audit; NOT representative",
         "inputs": [{"path": str(path.relative_to(root)), "sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
                     "bytes": path.stat().st_size} for path in files],
         "records_in": sum(len(read_jsonl(path)) for path in files), "records_out": len(rows),
-        "issue_count": len(issues), "code_version": "0.1.0", "analysis": "title + available subjects; abstracts not redistributed",
+        "issue_count": len(issues), "code_version": "0.2.0", "analysis": "title + available subjects; abstracts not redistributed",
         "privacy": "No author/supervisor fields; source pages may identify authors.",
         "license": "Third-party metadata: per source; no blanket license or training permission."}
     (report/"manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2)+"\n", encoding="utf-8")

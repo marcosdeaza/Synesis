@@ -1,5 +1,7 @@
 # Fuentes españolas de Synesis
 
+> Auditoría histórica del 16/10. La adquisición posterior de PDFs y sus resultados se documentan en [ADQUISICION_ESPANA.md](ADQUISICION_ESPANA.md), [ADQUISICION_GLOBAL.md](ADQUISICION_GLOBAL.md) y los manifiestos de v0.2.0.
+
 Auditoría: **16 de octubre de 2026**. La captura española inicial contiene **190 registros reales de metadatos**: 90 de la Universidad Europea de Valencia (UEV, obligatoria) y 100 de la Universitat Politècnica de València (UPV). Ya se publican en [`data/research_225/spain.jsonl`](../data/research_225/spain.jsonl), dentro de la colección completa de 225. Los títulos proceden de respuestas OAI-PMH institucionales; no son ejemplos sintéticos. No se descargaron PDFs ni se exportaron autores, directores, correos o campos `contributor`. Se omiten los textos completos de los resúmenes.
 
 El responsable confirmó permiso para publicar los 225 metadatos y usarlos en investigación y eventual entrenamiento; [`PERMISSIONS.json`](../data/research_225/PERMISSIONS.json) registra esa declaración sin validación independiente ni autorización institucional verificada. Las licencias observadas abajo se conservan como evidencia de origen y no se convierten en CC0. El pipeline público sigue utilizando por separado diez registros CC0 de TU Berlin; este documento describe la captura española, no las entradas de ese pipeline.
